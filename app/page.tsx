@@ -10,7 +10,6 @@ const App = () => {
   return (
     <main className="h-full w-full scrollbar-none overflow-hidden">
       <Hero />
-
       <WorkedWith />
       <div className="w-full max-w-5xl mx-auto px-2 md:px-0">
         <Services />
