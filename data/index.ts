@@ -294,3 +294,39 @@ export const dataanlytics = [
       "Tailored solutions ensure that you get the most relevant and impactful insights for your specific business needs.",
   },
 ];
+export const productmanage = [
+  {
+    id: 1,
+    title: "Market Research",
+    icon: "/marketresearch.svg",
+    cardColor: "#F9FBFF",
+    descri:
+      "Identify trends, customer needs, and opportunities for growth with in-depth market analysis.",
+  },
+  {
+    id: 2,
+    title: "Product Strategy",
+    icon: "/productstrategy.svg",
+    cardColor: "#F9FBFF",
+    descri:
+      "Create a roadmap for your product's success, aligning features and development timelines with business objectives",
+  },
+  {
+    id: 3,
+    title: "Launch Planning",
+    icon: "/launchplanning.svg",
+    cardColor: "#F9FBFF",
+    descri:
+      "Prepare for a successful product launch with targeted marketing, user feedback integration, and go-to-market strategies.",
+  },
+ 
+];
+
+export const productdevelopement = [
+  { title: "Planning and Strategy", icon: "/planinng.svg" },
+  { title: "UI/UX Design", icon: "/ui.svg" },
+  { title: "Development", icon: "/dev.svg" },
+  { title: "Maintainance and Support", icon: "/support.svg" },
+  { title: "Testing and Q/A", icon: "/qa.svg" },
+  { title: "Deployment and Launch", icon: "/launch.svg" },
+];
