@@ -26,12 +26,13 @@ const About = () => {
     <section className="w-full max-w-5xl mx-auto min-h-screen px-2 md:px-0">
       <div className="w-full md:h-[100vh] h-auto relative md:mt-14">
         <Image
-          src={"/aboutus.svg"}
+          src={"/aboutus.png"}
           alt="aboutus"
           width={1100}
           height={500}
           className={`object-contain rounded-xl`}
         />
+        
         <div className="md:w-[50%] h-64 flex flex-col space-y-3 rounded-xl p-4 z-30 bg-black border-2 border-brandcolor absolute md:bottom-20 md:left-10">
           <p className="md:text-2xl text-lg text-white font-semibold font-grotesque">
             Techwave Africa is a Faith-Driven Tech Startup with the vision to
@@ -49,7 +50,7 @@ const About = () => {
           <div className="w-24 h-10 relative">
             {" "}
             <Image
-              src={"/whyus.svg"}
+              src={"/whyus.png"}
               alt="aboutus"
               width={32}
               height={32}
@@ -195,21 +196,21 @@ const About = () => {
         </div>
         <div className="w-full">
           <Image
-            src={"/whatwedoleft.svg"}
+            src={"/aboutuscardl.png"}
             alt="aboutus"
             width={100}
             height={100}
             className={`object-contain absolute md:bottom-4 bottom-4`}
           />
           <Image
-            src={"/whatwedo.svg"}
+            src={"/aboutuscard.png"}
             alt="aboutus"
             width={300}
             height={200}
             className={`object-contain absolute md:left-24 left-12 md:bottom-10 bottom-8 `}
           />
           <Image
-            src={"/whatwedoright.svg"}
+            src={"/aboutuscardr.png"}
             alt="aboutus"
             width={100}
             height={100}

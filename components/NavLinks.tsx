@@ -63,7 +63,7 @@ const NavLinks = () => {
                       <RxCaretDown size={24} />
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="bg-white w-1/3 max-w-sm mx-auto -mt-14">
+                  <DialogContent className="bg-white md:w-1/3 md:max-w-sm mx-auto -mt-14">
                     <DialogHeader className="">
                       <DialogDescription className="border-none">
                         <div
