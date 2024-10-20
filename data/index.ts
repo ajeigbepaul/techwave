@@ -40,7 +40,8 @@ export const navItems = [
     ],
     link: "#",
   },
-  { id: 4, title: "Innovations", link: "/innovations" },
+  { id: 4, title: "Our workflow", link: "/workflow" },
+  { id: 5, title: "Innovations", link: "/innovations" },
 ];
 
 export const banner = [

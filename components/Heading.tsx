@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "./Button";
 
 const Heading = ({
   name,
   desc,
-  noborder,
-  hclass,
+  noborder
 }: {
   name: string;
   desc: string;

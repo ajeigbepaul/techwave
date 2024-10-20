@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { RxCaretDown, RxCaretUp } from "react-icons/rx";
+import { RxCaretDown} from "react-icons/rx";
 import { usePathname } from "next/navigation";
 import {
   Dialog,
@@ -11,13 +11,11 @@ import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 const NavLinks = () => {
   const pathname = usePathname();
   const [activeItem, setActiveItem] = useState<number | null>(1); // Track active item
-  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   useEffect(() => {
     // Set active item based on pathname when the component mounts or pathname changes
     const activeNavItem =
@@ -29,17 +27,7 @@ const NavLinks = () => {
     setActiveItem(activeNavItem.id);
   }, [pathname]); // Run effect when pathname changes
 
-  const handleDropdownToggle = (id: number | null) => {
-    setOpenDropdown(openDropdown === id ? null : id);
-  };
-  const [isDialogOpen, setIsDialogOpen] = useState(false); // State to manage dialog visibility
-  const handleDialogOpen = () => {
-    setIsDialogOpen(true); // Open the dialog
-  };
-
-  const handleDialogClose = () => {
-    setIsDialogOpen(false); // Close the dialog
-  };
+ 
   const handleNavClick = (id: number, link: string) => {
     setActiveItem(id); // Set clicked item as active
     if (link === "#") {

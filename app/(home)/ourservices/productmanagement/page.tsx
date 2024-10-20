@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import { dataanlytics, productmanage } from "@/data";
+import { productmanage } from "@/data";
 import Image from "next/image";
 import React from "react";
 
