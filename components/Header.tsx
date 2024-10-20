@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
 import MobileNav from "./MobileNav";
+import { useRouter } from "next/navigation";
 const Header = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -37,7 +39,9 @@ const Header = () => {
             height={24}
           />
         </button>
+
         <Button
+          onclick={() => router.replace("/contactus")}
           name="Contact us"
           buttonClass="p-3 w-40 bg-[#181818] text-white hidden md:flex"
         />

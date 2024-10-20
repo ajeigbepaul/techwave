@@ -5,23 +5,23 @@ const Workflow = () => {
   return (
     <section className="w-full min-h-screen mt-10 relative">
       <Image src="/workflowdir.svg" alt="flowthroughaimg" height={144} width={200} className="absolute contain h-[1000px] z-20 left-[40%] top-40"/>
-      <div className="w-full h-screen md:px-24 px-2">
-        <div className="text-2xl relative mt-24 h-8  w-full">
+      <div className="w-full h-screen md:px-24 px-0">
+        <div className="text-2xl relative mt-24 h-10 px-4  w-full">
           <span className=" w-40">
             <Image
               src={"/workflow.svg"}
               alt="bannerimg"
-              width={50}
+              width={100}
               height={70}
-              className="absolute object-contain bottom-0"
+              className="absolute object-contain -bottom-2"
             />
           </span>
-          <h2 className="text-3xl font-bold text-black font-grotesque">
+          <h2 className="text-5xl font-bold text-black font-grotesque">
             {" "}
             Workflow
           </h2>
         </div>
-        <div className="w-full md:h-[60vh] grid md:grid-cols-2 gap-8 mt-4">
+        <div className="w-full md:h-[60vh] grid md:grid-cols-2 gap-8 mt-10">
           <div className="w-full flex items-start justify-start">
             {" "}
             <div

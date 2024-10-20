@@ -331,3 +331,12 @@ export const productdevelopement = [
   { title: "Testing and Q/A", icon: "/qa.svg" },
   { title: "Deployment and Launch", icon: "/launch.svg" },
 ];
+
+export const pitch = [
+  { title: "Market analysis", descr: "With accurate market data, your pitch will be more convincing and tailored to address real market needs and opportunities." },
+  { title: "Presentation Design", descr: "A well-designed presentation enhances the overall impact of your pitch, keeping your audience engaged and making complex information easy to understand." },
+  { title: "Financial Modeling", descr: "A solid financial model adds credibility to your pitch, reassuring investors and stakeholders of the financial soundness of your proposal." },
+  { title: "Value Proposition Creation", descr: "A strong value proposition ensures that your audience understands the distinct advantages of your offering, making your pitch more persuasive." },
+  { title: "Pitch Coaching", descr: "Effective coaching ensures you present your pitch with confidence and poise, increasing your chances of success." },
+  { title: "Pitch Deck Review", descr: "Effective coaching ensures you present your pitch with confidence and poise, increasing your chances of success." },
+];
