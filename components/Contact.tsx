@@ -9,9 +9,9 @@ const Contact = () => {
   //   const formRef = useRef();
 
   //   const { alert, showAlert, hideAlert } = useAlert();
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
 
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form] = useState({ name: "", email: "", message: "" });
 
   //   const handleChange = ({ target: { name, value } }) => {
   //     setForm({ ...form, [name]: value });
