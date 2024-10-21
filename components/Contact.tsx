@@ -9,19 +9,28 @@ const Contact = () => {
   //   const formRef = useRef();
 
   //   const { alert, showAlert, hideAlert } = useAlert();
-  const [loading] = useState(false);
+  const [loading,setLoading] = useState(false);
 
-  const [form] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    service: "",
+    budget: "",
+  });
 
-  //   const handleChange = ({ target: { name, value } }) => {
-  //     setForm({ ...form, [name]: value });
-  //   };
+  const handleChange = ({
+    target: { name, value },
+  }: {
+    target: { name: string; value: string };
+  }) => {
+    setForm({ ...form, [name]: value });
+  };
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-  //     setLoading(true);
-
-  //   };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      setLoading(true);
+  };
 
   return (
     <section className="rounded-xl w-full border mb-10 border-[#B7CFFF] ">

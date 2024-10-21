@@ -57,7 +57,7 @@ const Services = () => {
                 icon
               />
               <div className="w-full flex items-center justify-end md:pr-12">
-                <div className="w-72 absolute bottom-5">
+                <div className="w-60 absolute bottom-5">
                   <Image
                     src={"/productmanbg.svg"}
                     alt="imagebg"
@@ -66,7 +66,7 @@ const Services = () => {
                     className="object-contain"
                   />
                 </div>
-                <div className="w-72 absolute bottom-0 right-24">
+                <div className="w-60 absolute bottom-0 right-24">
                   <Image
                     src={"/prodman2.svg"}
                     alt="imagebg"

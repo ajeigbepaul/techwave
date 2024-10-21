@@ -70,11 +70,11 @@ const Card = ({
             icon
           />
           <div className="w-full flex items-center justify-end">
-            <div className="w-60 absolute bottom-0">
+            <div className="w-48 absolute bottom-0">
               <Image
                 src={image}
                 alt="imagebg"
-                width={300}
+                width={200}
                 height={200}
                 className="object-contain"
               />
