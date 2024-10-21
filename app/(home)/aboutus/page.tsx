@@ -42,7 +42,7 @@ const About = () => {
           <Button name="Book a session" buttonClass="p-2 w-36 bg-white" />
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-[70vh] flex flex-col items-center justify-center md:mt-10 mt-16 ">
+      <div className="w-full md:h-[100vh] h-[70vh] flex flex-col items-center justify-center md:mt-10 mt-8 ">
         <div className="w-40 ">
           <h2 className="text-black text-2xl font-semibold font-grotesque text-center">
             Why us?
@@ -207,13 +207,13 @@ const About = () => {
             alt="aboutus"
             width={300}
             height={200}
-            className={`object-contain absolute md:left-24 left-12 md:bottom-10 bottom-8 `}
+            className={`object-contain absolute md:left-24 left-12 md:bottom-10 bottom-2 `}
           />
           <Image
             src={"/aboutuscardr.png"}
             alt="aboutus"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             className={`object-contain absolute md:left-[40%] left-[80%] md:bottom-20 bottom-20`}
           />
         </div>

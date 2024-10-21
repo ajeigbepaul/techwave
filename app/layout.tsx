@@ -35,12 +35,12 @@ export default function RootLayout({
 }>) {
   register();
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
         className={`${secondaryFont.variable} ${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col bg-gray-50`}
       >
         {/* Header */}
-        <header className="h-[14vh]">
+        <header className="h-[14vh] w-full">
           <Header />
         </header>
 
@@ -48,7 +48,7 @@ export default function RootLayout({
         <main className="flex-grow w-full">{children}</main>
 
         {/* Footer */}
-        <footer className="mt-auto">
+        <footer className="mt-auto w-full">
           <Footer />
         </footer>
       </body>
