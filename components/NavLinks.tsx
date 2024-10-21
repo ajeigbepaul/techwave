@@ -22,9 +22,9 @@ const NavLinks = () => {
       navItems.find((item) => {
         // Check if the pathname matches the item's link or if the pathname starts with the item's link
         return pathname === item.link || pathname.startsWith(item.link + "/");
-      }) || navItems[0]; // Default to first item (Home)
+      })  // || navItems[0]; Default to first item (Home)
 
-    setActiveItem(activeNavItem.id);
+    setActiveItem(activeNavItem?.id ?? null);
   }, [pathname]); // Run effect when pathname changes
 
  
