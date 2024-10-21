@@ -15,13 +15,13 @@ const BannerInfo = ({
   description1b?: string;
 }) => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col mb-10 md:mb-0">
       {position === 1 && (
-        <div className="flex flex-col space-y-6 w-full">
-          <h1 className="text-5xl text-white font-bold text-left font-grotesque">
+        <div className="flex flex-col md:space-y-6 space-y-4 w-full">
+          <h1 className="text-3xl md:text-5xl text-white font-bold text-left font-grotesque">
             {description1}
           </h1>
-          <span className="text-white bg-brandcolor text-5xl font-bold p-2 text-left w-fit font-grotesque">
+          <span className="text-white bg-brandcolor text-3xl md:text-5xl font-bold p-2 text-left w-fit font-grotesque">
             {emphasytext}
           </span>
           <p className="text-md text-whitetext text-left font-grotesque">{descri2}</p>
@@ -31,14 +31,14 @@ const BannerInfo = ({
         <div className="flex flex-col space-y-6 w-full">
           <div className="flex items-center space-x-2">
             {" "}
-            <span className="text-white bg-gold md:text-5xl text-4xl font-bold p-2 text-left w-fit font-grotesque">
+            <span className="text-white bg-gold md:text-5xl text-3xl font-bold p-2 text-left w-fit font-grotesque">
               {emphasytext}
             </span>
-            <h1 className="md:text-5xl text-3xl text-white font-bold text-left font-grotesque">
+            <h1 className="md:text-5xl text-2xl text-white font-bold text-left font-grotesque">
               {description1}
             </h1>
           </div>
-          <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
+          <h1 className="md:text-5xl text-3xl text-white font-bold text-left font-grotesque">
             {description1b}
           </h1>
 

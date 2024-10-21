@@ -13,8 +13,8 @@ const Heading = ({
   return (
     <div className=" flex items-center justify-center flex-col w-full mb-10">
       <div
-        className={`"p-2 border font-semibold ${
-          noborder ? "border-none" : "border-stroke_btn"
+        className={`" border font-semibold rounded-full ${
+          noborder ? "border-none" : "border-stroke_btn p-2"
         }  text-gold w-38`}
       >
         {name}

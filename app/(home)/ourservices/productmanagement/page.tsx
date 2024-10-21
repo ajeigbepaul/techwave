@@ -5,8 +5,8 @@ import React from "react";
 
 const ProductManagement = () => {
   return (
-    <section className="w-full min-h-screen ">
-      <div className="w-full h-[50vh] mt-[60px] relative">
+    <section className="w-full min-h-screen md:mt-14 mt-10">
+      <div className="w-full md:h-[50vh] h-auto relative px-2">
         <Image
           src={"/productmanagmentgradient.svg"}
           alt="bannerimg"
@@ -28,8 +28,8 @@ const ProductManagement = () => {
           height={40}
           className="absolute  object-contain left-[20%] top-8"
         />
-        <div className="w-full max-w-2xl absolute top-[8%] left-[23%] flex items-center justify-center flex-col">
-          <h1 className="text-black leading-relaxed text-center font-bold text-3xl font-grotesque w-[80%]">
+        <div className="w-full max-w-2xl absolute md:top-[8%] top-[10%] md:left-[23%] left-0 flex items-center justify-center flex-col">
+          <h1 className="text-black leading-relaxed text-center font-bold text-3xl font-grotesque md:w-[80%] w-full">
             Transforming{" "}
             <span className="relative">
               {" "}
@@ -44,7 +44,7 @@ const ProductManagement = () => {
             </span>{" "}
             into Market-Ready Products
           </h1>
-          <p className="text-sm text-subtext">
+          <p className="text-sm text-subtext text-center md:text-left">
             End-to-end product management to ensure your vision meets market
             needs.
           </p>
@@ -54,7 +54,7 @@ const ProductManagement = () => {
           />
         </div>
       </div>
-      <div className="w-full max-w-3xl  mx-auto h-[60vh]">
+      <div className="w-full max-w-3xl mx-auto md:h-[60vh] h-auto mt-14 md:mt-0 mb-14 md:mb-0 ">
         <div className="w-full h-full flex items-center justify-center">
           <Image
             src={"/productmanagementbg.svg"}
@@ -65,7 +65,7 @@ const ProductManagement = () => {
           />
         </div>
       </div>
-      <div className="w-full max-w-5xl  mx-auto h-[70vh]">
+      <div className="w-full max-w-5xl  mx-auto md:h-[70vh] h-auto mt-20 md:mt-0 px-2 md:px-0">
         <div className="w-full h-full flex flex-col items-center justify-center">
           <h2 className="text-xl ont-grotesque font-bold text-black">
             Our Expertise, Your Advantage
@@ -73,7 +73,7 @@ const ProductManagement = () => {
           <p className="text-[#18181880] font-bold text-sm md:w-[50%] w-full text-center mt-3 font-grotesque">
             Comprehensive solutions tailored to transform your ideas
           </p>
-          <div className="grid grid-cols-3 gap-4 mt-14">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mt-14">
             {productmanage.map((item, idx) => (
               <div
                 key={idx}
@@ -106,7 +106,7 @@ const ProductManagement = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto h-[100vh] md:mt-24">
+      <div className="w-full max-w-5xl mx-auto h-[100vh] md:mt-24 mt-10 px-2 md:px-0">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image
@@ -120,7 +120,7 @@ const ProductManagement = () => {
           <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
             <div className="flex flex-col space-y-4 w-[100%]">
               <div className="flex flex-col space-y-6 mb-6">
-                <h1 className="text-2xl text-black font-bold text-left font-grotesque w-[73%]">
+                <h1 className="md:text-2xl text-xl text-black font-bold text-left font-grotesque md:w-[73%] w-full">
                   At Techwave, we bridge the gap between great ideas and
                   successful product launches. 
                 </h1>

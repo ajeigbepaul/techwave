@@ -23,8 +23,8 @@ const About = () => {
     setHovered(null);
   };
   return (
-    <section className="w-full max-w-5xl mx-auto min-h-screen px-2 md:px-0">
-      <div className="w-full md:h-[100vh] h-auto relative md:mt-14">
+    <section className="w-full max-w-5xl mx-auto min-h-screen px-2 md:px-0 md:mt-14 mt-10">
+      <div className="w-full md:h-[100vh] h-[50vh] relative">
         <Image
           src={"/aboutus.png"}
           alt="aboutus"
@@ -33,8 +33,8 @@ const About = () => {
           className={`object-contain rounded-xl`}
         />
         
-        <div className="md:w-[50%] h-64 flex flex-col space-y-3 rounded-xl p-4 z-30 bg-black border-2 border-brandcolor absolute md:bottom-20 md:left-10">
-          <p className="md:text-2xl text-lg text-white font-semibold font-grotesque">
+        <div className="md:w-[50%] md:h-64 h-48 flex flex-col space-y-3 rounded-xl p-4 z-30 bg-black border-2 border-brandcolor absolute md:bottom-20 md:left-10">
+          <p className="md:text-2xl text-sm text-white font-semibold font-grotesque">
             Techwave Africa is a Faith-Driven Tech Startup with the vision to
             build innovative solutions that bring answers to the problem and
             needs of businesses and individuals around the world.
@@ -42,7 +42,7 @@ const About = () => {
           <Button name="Book a session" buttonClass="p-2 w-36 bg-white" />
         </div>
       </div>
-      <div className="w-full h-[100vh]  flex flex-col items-center justify-center mt-10 ">
+      <div className="w-full md:h-[100vh] h-[70vh] flex flex-col items-center justify-center md:mt-10 mt-16 ">
         <div className="w-40 ">
           <h2 className="text-black text-2xl font-semibold font-grotesque text-center">
             Why us?
@@ -81,12 +81,12 @@ const About = () => {
         {tab ? (
           <div className="grid md:grid-cols-2 gap-4 p-2 md:h-[40vh] h-auto mt-10">
             <div>
-              <h2 className="text-black md:text-3xl text-xl font-semibold md:w-[90%] font-grotesque">
+              <h2 className="text-black md:text-3xl text-lg font-semibold md:w-[90%] font-grotesque">
                 Empowering the Future Through Faith and Innovation
               </h2>
             </div>
             <div>
-              <p className="md:text-2xl text-xl text-subtext font-medium md:w-[90%] font-grotesque">
+              <p className="md:text-2xl text-sm text-subtext font-medium md:w-[90%] font-grotesque">
                 As change agents we are on a mission to create innovative
                 products that inspire positive change and bring light to lives
                 across the globe
@@ -99,7 +99,7 @@ const About = () => {
           </div>
         )}
       </div>
-      <div className="w-full h-[100vh]  pb-10 flex flex-col md:mt-20 space-x-2 p-0 relative ">
+      <div className="w-full md:h-[100vh] h-[120vh] pb-10 flex flex-col md:mt-20 space-x-2 p-0 relative ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <div>
             <div className="relative h-12">
@@ -194,7 +194,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full md:mt-24 mb-0">
           <Image
             src={"/aboutuscardl.png"}
             alt="aboutus"
@@ -218,6 +218,7 @@ const About = () => {
           />
         </div>
       </div>
+
       <div className="w-full md:h-[100vh] h-auto flex flex-col space-y-5 mt-20">
         <Heading
           name="Work process"

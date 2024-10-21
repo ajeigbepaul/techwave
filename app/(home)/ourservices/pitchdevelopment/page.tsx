@@ -8,9 +8,9 @@ const Pitch = () => {
     /* incase this did not show change it to the aboutuscardr and aboutuscardl */
   }
   return (
-    <section className="w-full min-h-screen mt-14">
-      <div className="w-full px-24 ">
-        <div className="w-full h-[80vh] relative rounded">
+    <section className="w-full min-h-screen md:mt-14 mt-10">
+      <div className="w-full md:px-24 ">
+        <div className="w-full h-[80vh] relative rounded bg-black">
           <Image
             src={"/pitchgradbg.svg"}
             alt="pitch"
@@ -58,12 +58,12 @@ const Pitch = () => {
         </div>
       </div>
       <div className="w-full h-[100vh] relative mt-4 mb-0">
-        <div className="px-24 w-full  h-[100vh]">
-          <div className="w-full h-full grid md:grid-cols-2">
+        <div className="md:px-24 px-2 w-full md:h-[100vh] h-auto">
+          <div className="w-full h-full grid md:grid-cols-2 grid-cols-1">
             <div className="w-full h-full flex items-start md:mt-10 mt-10 justify-center">
-              <div className="flex flex-col space-y-4 w-[80%]">
+              <div className="flex flex-col space-y-4 md:w-[80%] w-full">
                 <div className="flex flex-col space-y-6 mb-6">
-                  <h1 className="text-3xl text-black w-[70%] font-bold text-left font-grotesque">
+                  <h1 className="text-3xl text-black md:w-[70%] w-full font-bold text-left font-grotesque">
                     Crafting Compelling Pitches for Success
                   </h1>
                   <p className="text-subtext text-md text-left font-grotesque w-[100%]">
@@ -80,15 +80,15 @@ const Pitch = () => {
                 alt="bannerimg"
                 width={400}
                 height={450}
-                className="object-contain z-50 absolute top-0 left-16"
+                className="object-contain z-50 absolute top-0 md:left-16"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full h-[90vh] bg-[#F9FBFF] px-24  flex flex-col items-center justify-center mt-10 ">
-        <div className="w-fit ">
-          <h2 className="text-black text-2xl font-semibold font-grotesque text-center">
+      <div className="w-full md:h-[90vh] h-auto bg-[#F9FBFF] md:px-24 px-2  flex flex-col items-center justify-center md:mt-10 mt-32">
+        <div className="md:w-fit w-full ">
+          <h2 className="text-black md:text-2xl text-lg  font-semibold font-grotesque text-center">
             What we offer under pitch development
           </h2>
           <div className="w-24 h-10 relative">
@@ -98,12 +98,12 @@ const Pitch = () => {
               alt="aboutus"
               width={32}
               height={32}
-              className={`object-contain absolute -top-1 left-[0%]`}
+              className={`object-contain absolute -top-1 md:left-[0%] left-[20%]`}
             />
           </div>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
             {pitch.map((item, idx) => (
               <div
                 key={idx}
@@ -119,9 +119,9 @@ const Pitch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:mt-14">
-        <div className="w-full h-[100vh] px-24">
-          <div className="w-full h-full grid md:grid-cols-2 gap-8">
+      <div className="w-full md:mt-14 mt-20">
+        <div className="w-full md:h-[100vh] h-auto md:px-24 px-2">
+          <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
             <div className="w-full h-full relative ">
               <Image
                 src={"/pitchcard2.svg"}
@@ -134,7 +134,7 @@ const Pitch = () => {
             <div className="w-full h-full flex items-start md:mt-24 mt-10 justify-center">
               <div className="flex flex-col space-y-4 w-[100%]">
                 <div className="flex flex-col space-y-6 mb-6">
-                  <h1 className="text-2xl text-black font-bold text-left font-grotesque w-[60%]">
+                  <h1 className="text-2xl text-black font-bold text-left font-grotesque md:w-[60%] w-full">
                     Reach Out for Expert Pitch Development Assistance
                   </h1>
                   <p className="text-[16px] text-subtext text-left w-full">

@@ -6,8 +6,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="w-full min-h-screen">
-      <div className="w-full h-[100vh] relative mt-10 mb-0">
+    <section className="w-full min-h-screen md:mt-14 mt-10">
+      <div className="w-full h-[100vh] relative md:mt-10 top-0 mb-0">
         <Image
           src={"/bg1black.svg"}
           alt="bannerimg"
@@ -22,9 +22,9 @@ const page = () => {
           height={750}
           className="w-screen absolute top-0 h-full object-cover"
         />
-        <div className=" absolute top-0 w-full h-full grid md:grid-cols-2">
-          <div className="w-full h-full flex items-start md:mt-24 mt-10 justify-center">
-            <div className="flex flex-col space-y-4 w-[80%]">
+        <div className=" absolute top-0 w-full h-full grid md:grid-cols-2 grid-cols-1">
+          <div className="w-full h-full px-2 md:px-0 flex items-start md:mt-24 mt-10 justify-center">
+            <div className="flex flex-col space-y-4 md:w-[80%]">
               <div className="flex flex-col space-y-6 mb-6">
                 <h1 className="text-5xl text-white font-bold text-left font-grotesque">
                   Data Analytics
@@ -48,17 +48,17 @@ const page = () => {
               alt="bannerimg"
               width={450}
               height={450}
-              className="object-contain absolute top-14 left-10"
+              className="object-contain absolute md:top-14 -top-48 md:left-10"
             />
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh]  relative mt-14 mb-0">
-        <div className=" absolute top-0 w-full h-full grid md:grid-cols-2">
-          <div className="w-full h-full flex items-start md:mt-24 mt-10 justify-center">
-            <div className="flex flex-col space-y-4 w-[80%]">
+      <div className="w-full md:h-[100vh] h-[110vh] relative mt-14 mb-0">
+        <div className="  w-full md:px-12 px-2 h-full grid md:grid-cols-2 grid-cols-1">
+          <div className="w-full h-full flex items-start md:mt-20 md:ml-14 ml-0 mt-10 justify-center">
+            <div className="flex flex-col space-y-4 md:w-[80%] w-full">
               <div className="flex flex-col space-y-6 mb-6">
-                <h1 className="text-3xl text-black w-[70%] font-bold text-left font-grotesque">
+                <h1 className="text-3xl text-black md:w-[70%] w-full font-bold text-left font-grotesque">
                   Transforming insights into actions
                 </h1>
                 <p className="text-subtext text-md text-left font-grotesque w-[90%]">
@@ -78,27 +78,27 @@ const page = () => {
               alt="aboutus"
               width={100}
               height={100}
-              className={`object-contain absolute md:bottom-32 bottom-4 left-0`}
+              className={`object-contain absolute md:bottom-16 bottom-20  left-10`}
             />
             <Image
               src={"/dataanalyticimage.svg"}
               alt="bannerimg"
               width={380}
               height={450}
-              className="object-contain z-50 absolute top-0 left-16"
+              className="object-contain z-50 absolute md:bottom-20 bottom-0 md:left-24"
             />
             <Image
               src={"/whatwedoright.svg"}
               alt="aboutus"
               width={50}
               height={50}
-              className={`object-contain absolute md:right-[28%] md:-top-6 top-20`}
+              className={`object-contain absolute md:right-[18%] md:top-8 top-20`}
             />
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh]  flex flex-col items-start justify-start">
-        <div className="w-full px-24 flex flex-col">
+      <div className="w-full md:h-[100vh] h-auto  flex flex-col items-start justify-start mt-14 md:mt-0">
+        <div className="w-full md:px-24 px-2 flex flex-col">
           <div className="w-full flex mb-10 items-center justify-center ">
             <div className="w-56 relative h-10">
               <h2 className="text-black mb-5  w-fit text-2xl font-semibold font-grotesque text-center">
@@ -117,7 +117,7 @@ const page = () => {
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-10 md:mb-0">
               <div className="w-full flex items-center justify-center">
                 <Image
                   src={"/dataanalyticimage2.svg"}
@@ -127,7 +127,7 @@ const page = () => {
                   className="object-contain"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                 {dataanlytics.map((item, idx) => (
                   <div
                     key={idx}

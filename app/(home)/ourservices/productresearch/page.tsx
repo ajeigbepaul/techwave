@@ -6,8 +6,8 @@ import React from "react";
 
 const ProductResearch = () => {
   return (
-    <section className="w-full min-h-screen max-w-6xl mx-auto flex flex-col">
-      <div className="p-14 w-full h-[70vh]">
+    <section className="w-full min-h-screen max-w-6xl mx-auto flex flex-col md:mt-14 mt-10">
+      <div className="md:p-14 p-2 w-full md:h-[70vh] h-[60vh]">
         <div className="w-full flex items-center space-x-2 mt-10">
           <h2 className="text-black font-semibold text-lg">Research</h2>
           <div className="w-4 h-4 bg-gold rounded-full" />
@@ -40,9 +40,9 @@ const ProductResearch = () => {
           buttonClass="w-36 p-3 bg-black text-white"
         />
       </div>
-      <div className="w-full h-[70vh] pb-10 px-12">
+      <div className="w-full md:h-[70vh] h-auto pb-10 md:px-12 px-2">
         <div className="w-full">
-          <div className="w-3/4">
+          <div className="md:w-3/4 w-full ">
             <Image
               src={"/designprocess.svg"}
               alt="aboutus"
@@ -53,14 +53,14 @@ const ProductResearch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh] pb-10 px-12 mt-20">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col space-y-4">
+      <div className="w-full md:h-[100vh] h-auto pb-10 md:px-12 px-2 mt-20">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="flex flex-col space-y-4 mb-8 md:mb-0">
             <h1 className="text-xs text-brandcolor">Our Services</h1>
-            <h1 className="w-[75%] text-black text-3xl font-bold font-grotesque">
+            <h1 className="md:w-[75%] w-full text-black text-3xl font-bold font-grotesque">
               Comprehensive Product Development at Techwave
             </h1>
-            <p className="w-[80%] text-subtext text-[16px] mt-10 ">
+            <p className="md:w-[80%] w-full text-subtext text-[16px] mt-10 ">
               Creating a successful product requires more than just an idea. It
               involves thorough research, thoughtful design, and meticulous
               development. At Techwave, we specialize in guiding you through
@@ -69,11 +69,11 @@ const ProductResearch = () => {
             </p>
             <Button
               name="Book a session"
-              buttonClass="p-3 w-60 bg-black text-white mt-20"
+              buttonClass="p-3 w-60 bg-black text-white mt-20 "
             />
           </div>
           <div className="w-full">
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
               {service.map((item, idx) => (
                 <Card
                   key={idx}

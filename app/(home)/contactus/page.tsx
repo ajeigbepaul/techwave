@@ -5,9 +5,9 @@ import React from "react";
 
 const Contactus = () => {
   return (
-    <section className="w-full min-h-screen mt-14">
+    <section className="w-full min-h-screen md:mt-14 mt-10">
       <div className="w-full max-w-4xl mx-auto">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <div className="w-full">
             <h1 className="text-black mb-5 text-lg font-bold w-[50%]">
               Consult with our product analytics expert
@@ -18,7 +18,7 @@ const Contactus = () => {
               directly.
             </p>
             <Image
-              src={"/contactus.svg"}
+              src={"/contactus.png"}
               alt="bannerimg"
               width={400}
               height={400}

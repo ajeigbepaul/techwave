@@ -5,13 +5,13 @@ import React from "react";
 
 const Innovation = () => {
   return (
-    <section className="w-full mt-14 min-h-screen px-24">
+    <section className="w-full md:mt-14 mt-10  min-h-screen md:px-24 px-2">
       <div className="w-full h-[100vh] md:mt-24">
-        <div className="w-full h-full grid md:grid-cols-2 gap-8">
+        <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
           <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
             <div className="flex flex-col space-y-4 w-[100%]">
               <div className="flex flex-col space-y-6 mb-6">
-                <h1 className="text-2xl text-black font-bold text-left font-grotesque w-[73%]">
+                <h1 className="text-2xl text-black font-bold text-left font-grotesque md:w-[73%]w-full">
                   At Techwave, we bridge the gap between great ideas and
                   successful product launches. 
                 </h1>
@@ -22,7 +22,7 @@ const Innovation = () => {
               <Button
                 name="Book a session"
                 icon
-                buttonClass="p-3 w-40 bg-brandcolor text-white"
+                buttonClass="p-3 w-fit bg-brandcolor text-white"
               />
             </div>
           </div>
@@ -37,7 +37,7 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh] mb-10 mt-0">
+      <div className="w-full md:h-[100vh] h-auto mb-10 mt-0">
         <Heading
           noborder
           name="Our personal projects"
@@ -69,7 +69,7 @@ const Innovation = () => {
                 <Button
                   icon
                   name="Book a session"
-                  buttonClass="p-3 w-40 bg-brandcolor text-white"
+                  buttonClass="p-3 w-fit bg-brandcolor text-white"
                 />
               </div>
             </div>
@@ -85,7 +85,7 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh] mb-10 mt-24">
+      <div className="w-full md:h-[100vh] h-auto  mb-10 mt-32">
         <div className="w-full mt-0">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full relative ">
@@ -121,7 +121,7 @@ const Innovation = () => {
                 <Button
                   icon
                   name="Book a session"
-                  buttonClass="p-3 w-40 bg-[#162BA5] text-white"
+                  buttonClass="p-3 w-fit bg-[#162BA5] text-white"
                 />
               </div>
             </div>

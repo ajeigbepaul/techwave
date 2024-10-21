@@ -12,7 +12,7 @@ const Button = ({ name, onclick, buttonClass, icon }: buttonProps) => {
     // p-4 w-40 bg-[#181818] text-white
     <button
       onClick={onclick}
-      className={`${buttonClass}  rounded-full flex items-center justify-center`}
+      className={`${buttonClass} rounded-full flex items-center justify-center`}
     >
       {name}
       {icon && <FaArrowRight className="ml-4" />}

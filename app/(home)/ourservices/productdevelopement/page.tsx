@@ -6,7 +6,7 @@ import React from "react";
 
 const ProductDev = () => {
   return (
-    <section className="w-full min-h-screen relative">
+    <section className="w-full min-h-screen relative md:mt-14 mt-10">
       <div className="w-full h-[100vh] mt-10">
         <Image
           src={"/productdevelopment.svg"}
@@ -15,12 +15,12 @@ const ProductDev = () => {
           height={750}
           className="w-screen relative h-full object-cover"
         />
-        <div className="absolute w-[70%] top-[14%] px-24">
-          <div className="flex flex-col space-y-6 mb-6">
-            <h1 className="text-5xl text-white font-bold text-left font-grotesque">
+        <div className="absolute md:w-[70%] w-full md:top-[14%] top-10 md:px-24 px-2">
+          <div className="flex flex-col space-y-8 mb-6">
+            <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
               Transforming Ideas into
             </h1>
-            <h1 className="text-5xl text-white font-bold text-left font-grotesque">
+            <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
               Powerful Digital Solutions
             </h1>
             <p className="text-whitetext text-md text-left">
@@ -33,16 +33,19 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  h-[70vh] bg-[#F9FBFF] flex items-center justify-center">
+      <div className="w-full  md:h-[70vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-10 md:mt-0">
         <div className="w-full max-w-3xl mx-auto">
           <Heading
             noborder
             name="Our Development Process"
             desc="Our process blends creativity, technology, and precision."
           />
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-2 md:px-0">
             {productdevelopement.map((item, idx) => (
-              <div key={idx} className="w-full rounded-[8px] p-2 flex items-center space-x-2 border border-[#B7CFFF] ">
+              <div
+                key={idx}
+                className="w-full rounded-[8px] md:p-2 p-3 flex items-center space-x-2 border border-[#B7CFFF] "
+              >
                 <Image
                   src={item?.icon}
                   alt="cardicon"
@@ -58,7 +61,7 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto h-[100vh] md:mt-14">
+      <div className="w-full max-w-5xl px-2 md:px-2 mx-auto md:h-[100vh] h-auto md:mt-14 mt-10">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image

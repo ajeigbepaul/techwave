@@ -3,7 +3,7 @@ import React from "react";
 
 const Workflow = () => {
   return (
-    <section className="w-full min-h-screen mt-10 relative">
+    <section className="w-full min-h-screen md:mt-14 mt-10 relative">
       <Image src="/workflowdir.svg" alt="flowthroughaimg" height={144} width={200} className="absolute contain h-[1000px] z-20 left-[40%] top-40"/>
       <div className="w-full h-screen md:px-24 px-0">
         <div className="text-2xl relative mt-24 h-10 px-4  w-full">
