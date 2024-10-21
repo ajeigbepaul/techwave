@@ -14,7 +14,7 @@ const Innovation = () => {
       </div>
       <div className="w-full relative h-[80vh]">
         <Image
-          src={"/globe1.svg"}
+          src={"/globe1.png"}
           alt="globe"
           width={980}
           height={500}
@@ -55,7 +55,7 @@ const Innovation = () => {
           </div>
           <div>
             <Image
-              src={"/Agent_Avatars.svg"}
+              src={"/Agent_Avatars.png"}
               alt="globe"
               width={450}
               height={500}

@@ -48,7 +48,7 @@ export const banner = [
   {
     contour: "/bgcontour.svg",
     imagebg: "/bg1green.svg",
-    image: "/techwavebg1.svg",
+    image: "/techwavebg1.png",
     description1: "Forging Dreams into",
     emphasytext: "Digital Realities",
     description1b: "",
@@ -59,7 +59,7 @@ export const banner = [
   {
     contour: "/bgblackcontour.svg",
     imagebg: "/bg1black.svg",
-    image: "/techwavebg2.svg",
+    image: "/techwavebg2.png",
     description1: "Research",
     description1b: "& Consulting",
     emphasytext: "Innovation,",
@@ -161,8 +161,8 @@ export const casestudy = [
   {
     id: 1,
     icon: "/logistichubsec.svg",
-    mainimage: "/log2.svg",
-    sideimage: "/log1.svg",
+    mainimage: "/log1.png",
+    sideimage: "/log2.png",
     cardColor: "#1778C9",
     descr:
       "We consulted for a logistics company who were looking to build a mobile app to help its riders easily accept and complete orders. We also worked with them to deliver a client and admin platform to control the orders, riders, customers and more.",
@@ -170,8 +170,8 @@ export const casestudy = [
   {
     id: 2,
     icon: "/ifeoluwa.svg",
-    mainimage: "/ife2.svg",
-    sideimage: "/ife1.svg",
+    mainimage: "/ife1.png",
+    sideimage: "/ife2.png",
     cardColor: "#E4FFDB",
     descr:
       "We consulted for one of the leading politicians looking to build a website that represents its foundation and what he is doing in the community. We also built an admin app to help his team better manage information placed on the platform",
@@ -179,8 +179,8 @@ export const casestudy = [
   {
     id: 3,
     icon: "/mantid2.svg",
-    mainimage: "/man2.svg",
-    sideimage: "/man1.svg",
+    mainimage: "/man1.png",
+    sideimage: "/man2.png",
     cardColor: "#E8D5FF",
     descr:
       "We consulted for a real estate entrepreneur who was looking to build an asset management tool. We developed a mobile app, its official website and web App for those accustomed to bigger screens.",
@@ -188,8 +188,8 @@ export const casestudy = [
   {
     id: 4,
     icon: "/alumniassociation.svg",
-    mainimage: "al1.svg",
-    sideimage: "al2.svg",
+    mainimage: "/al1.png",
+    sideimage: "/al2.png",
     cardColor: "#FFECCA",
     descr:
       "Techwave consulted for one of the leading public universities to build a website, mobile app and admin app to run specific needed tasks for its alumni association.",

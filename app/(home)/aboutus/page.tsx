@@ -214,7 +214,7 @@ const About = () => {
             alt="aboutus"
             width={50}
             height={50}
-            className={`object-contain absolute md:left-[40%] left-[80%] md:bottom-20 bottom-20`}
+            className={`object-contain absolute md:left-[40%] left-[88%] md:bottom-20 bottom-20`}
           />
         </div>
       </div>

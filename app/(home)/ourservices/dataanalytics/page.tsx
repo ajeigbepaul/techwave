@@ -44,7 +44,7 @@ const page = () => {
           </div>
           <div className="w-full h-full relative">
             <Image
-              src={"/dataanalyticimagebg.svg"}
+              src={"/dataanalyticimagebg.png"}
               alt="bannerimg"
               width={450}
               height={450}

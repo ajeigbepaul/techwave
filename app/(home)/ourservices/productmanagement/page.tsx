@@ -57,7 +57,7 @@ const ProductManagement = () => {
       <div className="w-full max-w-3xl mx-auto md:h-[60vh] h-auto mt-14 md:mt-0 mb-14 md:mb-0 ">
         <div className="w-full h-full flex items-center justify-center">
           <Image
-            src={"/productmanagementbg.svg"}
+            src={"/productmanagementbg.png"}
             alt="productmanimg"
             width={600}
             height={450}
@@ -110,7 +110,7 @@ const ProductManagement = () => {
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image
-              src={"/productmanagement2.svg"}
+              src={"/productmanagement2.png"}
               alt="bannerimg"
               width={450}
               height={450}

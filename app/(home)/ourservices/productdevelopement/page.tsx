@@ -9,7 +9,7 @@ const ProductDev = () => {
     <section className="w-full min-h-screen relative md:mt-14 mt-10">
       <div className="w-full h-[100vh] mt-10">
         <Image
-          src={"/productdevelopment.svg"}
+          src={"/productdevelopment.png"}
           alt="bannerimg"
           width={1020}
           height={750}
@@ -65,7 +65,7 @@ const ProductDev = () => {
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image
-              src={"/productdevelopment2.svg"}
+              src={"/productdevelopment2.png"}
               alt="bannerimg"
               width={450}
               height={450}

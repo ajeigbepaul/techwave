@@ -16,7 +16,7 @@ const MobileNav = ({
       } overflow-hidden bg-white`} // Ensure overflow-x and overflow-y are hidden
       style={{ overflowX: "hidden" }} // Add this style to explicitly hide horizontal scrolling
     >
-      <div className="flex justify-end p-4 mr-8">
+      <div className="flex justify-end p-4 mr-4">
         <button
           className="text-neutral-400 hover:text-black"
           onClick={closeMenu}

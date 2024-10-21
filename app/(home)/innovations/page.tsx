@@ -12,11 +12,10 @@ const Innovation = () => {
             <div className="flex flex-col space-y-4 w-[100%]">
               <div className="flex flex-col space-y-6 mb-6">
                 <h1 className="text-2xl text-black font-bold text-left font-grotesque md:w-[73%]w-full">
-                  At Techwave, we bridge the gap between great ideas and
-                  successful product launches. 
+                  Pioneering Solutions and Leading Innovation 
                 </h1>
                 <p className="text-[16px] text-subtext text-left w-full">
-                  {`Our product management services are designed to guide you through every stage of development—from initial concept to market release—ensuring that every step aligns with your goals and customer needs.`}
+                  {`Leading the charge in technological advancements and creative breakthroughs.`}
                 </p>
               </div>
               <Button
@@ -28,7 +27,7 @@ const Innovation = () => {
           </div>
           <div className="w-full h-full relative ">
             <Image
-              src={"/innovationcard1.svg"}
+              src={"/innovationcard1.png"}
               alt="bannerimg"
               width={450}
               height={450}
@@ -75,7 +74,7 @@ const Innovation = () => {
             </div>
             <div className="w-full h-full relative ">
               <Image
-                src={"/innovationcard2.svg"}
+                src={"/innovationcard2.png"}
                 alt="bannerimg"
                 width={400}
                 height={400}
@@ -90,7 +89,7 @@ const Innovation = () => {
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full relative ">
               <Image
-                src={"/innovationcard3.svg"}
+                src={"/innovationcard3.png"}
                 alt="bannerimg"
                 width={400}
                 height={400}
