@@ -35,14 +35,14 @@ const Contact = () => {
   return (
     <section className="rounded-xl w-full border mb-10 border-[#B7CFFF] ">
       <div className="flex p-8 w-full">
-        <form className="mt-0 flex flex-col space-y-4 w-full">
+        <form onSubmit={handleSubmit} className="mt-0 flex flex-col space-y-4 w-full">
           <label className="space-y-3 flex flex-col w-full">
             <span className="field-label">Name</span>
             <input
               type="text"
               name="name"
               value={form.name}
-              // onChange={handleChange}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-[#F7F7F7]"
               placeholder="ex., John Doe"
@@ -55,7 +55,7 @@ const Contact = () => {
               type="email"
               name="email"
               value={form.email}
-              // onChange={handleChange}
+              onChange={handleChange}
               required
               className=" w-full p-2 bg-[#F7F7F7]"
               placeholder="ex., johndoe@gmail.com"
@@ -67,8 +67,8 @@ const Contact = () => {
             </span>
             <select
               name="service"
-              value={form.email}
-              // onChange={handleChange}
+              value={form.service}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-[#F7F7F7]"
             >
@@ -79,8 +79,8 @@ const Contact = () => {
             <span className="field-label">Budjet</span>
             <select
               name="budget"
-              value={form.email}
-              // onChange={handleChange}
+              value={form.budget}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-[#F7F7F7]"
             >
@@ -93,7 +93,7 @@ const Contact = () => {
             <textarea
               name="message"
               value={form.message}
-              // onChange={handleChange}
+              onChange={handleChange}
               required
               rows={5}
               className="w-full p-2 bg-[#F7F7F7]"
