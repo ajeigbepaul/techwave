@@ -7,11 +7,11 @@ import { phase } from "@/data";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useState } from "react";
- interface aboutProps {
-  title:string,
-  descr:string,
-  phase:string,
- }
+interface aboutProps {
+  title: string;
+  descr: string;
+  phase: string;
+}
 const About = () => {
   const [tab, setTab] = useState(true);
   const [hovered, setHovered] = useState<number | null>(null);
@@ -24,7 +24,7 @@ const About = () => {
   };
   return (
     <section className="w-full max-w-5xl mx-auto min-h-screen px-2 md:px-0 md:mt-14 mt-10">
-      <div className="w-full md:h-[100vh] h-[50vh] relative">
+      <div className="w-full md:h-[100vh] h-[50vh] relative md:pt-14">
         <Image
           src={"/aboutus.png"}
           alt="aboutus"
@@ -32,14 +32,19 @@ const About = () => {
           height={500}
           className={`object-contain rounded-xl`}
         />
-        
-        <div className="md:w-[50%] md:h-64 h-48 flex flex-col space-y-3 rounded-xl p-4 z-30 bg-black border-2 border-brandcolor absolute md:bottom-20 md:left-10">
-          <p className="md:text-2xl text-sm text-white font-semibold font-grotesque">
+
+        <div className="md:w-[52%] md:h-72 h-60 flex flex-col space-y-3 rounded-xl p-4 px-4 z-30 bg-black border-4 border-brandcolor absolute md:-bottom-14 md:left-4">
+          <p className="md:flex hidden md:text-2xl leading-10 w-[100%] text-sm text-white font-semibold font-grotesque">
             Techwave Africa is a Faith-Driven Tech Startup with the vision to
             build innovative solutions that bring answers to the problem and
             needs of businesses and individuals around the world.
           </p>
-          <Button name="Book a session" buttonClass="p-2 w-36 bg-white" />
+          <p className="md:hidden ">
+            We have a dedicated team committed to bringing your dreams to life
+          </p>
+          <div className="w-full md:pt-8">
+            <Button name="Book a session" buttonClass="p-2 w-36 bg-white " />
+          </div>
         </div>
       </div>
       <div className="w-full md:h-[100vh] h-[70vh] flex flex-col items-center justify-center md:mt-10 mt-8 ">
@@ -99,7 +104,7 @@ const About = () => {
           </div>
         )}
       </div>
-      <div className="w-full md:h-[100vh] h-[120vh] pb-10 flex flex-col md:mt-20 space-x-2 p-0 relative ">
+      <div className="w-full md:h-[100vh] h-[120vh] pb-10 flex flex-col md:mt-4 space-x-2 p-0 relative ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <div>
             <div className="relative h-12">
@@ -200,26 +205,26 @@ const About = () => {
             alt="aboutus"
             width={100}
             height={100}
-            className={`object-contain absolute md:bottom-4 bottom-4`}
+            className={`object-contain absolute md:-bottom-10 bottom-4`}
           />
           <Image
             src={"/aboutuscard.png"}
             alt="aboutus"
-            width={300}
+            width={350}
             height={200}
-            className={`object-contain absolute md:left-24 left-12 md:bottom-10 bottom-2 `}
+            className={`object-contain absolute md:left-[120px] left-12 md:-bottom-16 bottom-2 `}
           />
           <Image
             src={"/aboutuscardr.png"}
             alt="aboutus"
-            width={50}
-            height={50}
-            className={`object-contain absolute md:left-[40%] left-[88%] md:bottom-20 bottom-20`}
+            width={100}
+            height={100}
+            className={`object-contain absolute md:left-[48%] left-[88%] md:bottom-20 bottom-20`}
           />
         </div>
       </div>
 
-      <div className="w-full md:h-[100vh] h-auto flex flex-col space-y-5 mt-20">
+      <div className="w-full md:h-[100vh] h-auto flex flex-col space-y-5 mt-40">
         <Heading
           name="Work process"
           desc="We work step by step to achieve better growth results."
@@ -234,9 +239,8 @@ const About = () => {
             />
           ))}
         </div>
-       
       </div>
-      <Founder/>
+      <Founder />
     </section>
   );
 };

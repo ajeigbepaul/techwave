@@ -1,59 +1,57 @@
-// "use client";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { navItems } from "@/data";
 
-// import {
-//   Dialog,
-//   DialogContent,
-//   DialogDescription,
-//   DialogFooter,
-//   DialogHeader,
-//   DialogTitle,
-// } from "@/components/ui/dialog";
+interface AddCategoryModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  item: any;
+}
+interface subProps {
+  image: string;
+  title: string;
+  Icon: string;
+  id: number;
+  link: string;
+}
 
+const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
+  const handleModalClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+  return (
+    <div
+      className="fixed px-4 py-4 top-0 left-0 h-screen z-50 w-full bg-[#00000026] flex items-center justify-center overflow-y-auto"
+      onClick={onClose}
+    >
+      <div
+        className="flex flex-col bg-white rounded-[4px] w-full max-w-xs -mt-32 -ml-40"
+        onClick={handleModalClick}
+      >
+        <div className={cn(" p-2 px-4 z-50 transition-all duration-300 ease-in-out")}>
+          {" "}
+          {item?.map((item: subProps, idx: number) => (
+            <div key={idx}>
+              <a
+                href={item.link}
+                className="w-full flex items-center space-x-1"
+              >
+                <div className="flex w-8 h-10 rounded-full">
+                  <Image
+                    src={item?.Icon}
+                    width={24}
+                    height={24}
+                    alt="sub-linkicons"
+                  />
+                </div>
+                <span className="text-xs text-[#181818] font-medium">{item?.title}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// interface Props {
-//   title?: string;
-//   description?: string;
-//   open: boolean;
-//   hideCloseIcon?: boolean;
-//   onClose: () => void;
-//   body: React.ReactElement;
-//   handleSubmit:(values: any) => void ;
-//   isEdit?: boolean;
-//   details?:any
-// }
-
-// export default function CreateFaqModal({
-//   title,
-//   description,
-//   open,
-//   onClose,
-//   body,
-//   hideCloseIcon,
-//   handleSubmit,
-//   isEdit,
-//   details
-// }: Props) {
-//   const onChange = (open: boolean) => {
-//     if (!open) return onClose();
-//   };
-
-//   return (
-//     <Dialog open={open} onOpenChange={onChange}>
-//       <DialogContent
-//         hideCloseIcon={hideCloseIcon}
-//         className="md:left-[80%] md:top-[40%]"
-//       >
-//         <DialogHeader>
-//           <DialogTitle className="font-display text-opexBlue-dark  uppercase">
-//             {isEdit ? "EDIT QUESTION" : title}
-//           </DialogTitle>
-//           <DialogDescription>{description}</DialogDescription>
-//         </DialogHeader>
-//         <div className="">{body}</div>
-//         <DialogFooter>
-         
-//         </DialogFooter>
-//       </DialogContent>
-//     </Dialog>
-//   );
-// }
+export default NavModal;

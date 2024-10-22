@@ -5,8 +5,8 @@ import React from "react";
 
 const ProductManagement = () => {
   return (
-    <section className="w-full min-h-screen md:mt-14 mt-10">
-      <div className="w-full md:h-[50vh] h-auto relative px-2">
+    <section className="w-full min-h-screen md:mt-8 mt-10">
+      <div className="w-full md:h-[70vh] h-auto relative px-2">
         <Image
           src={"/productmanagmentgradient.svg"}
           alt="bannerimg"
@@ -28,8 +28,8 @@ const ProductManagement = () => {
           height={40}
           className="absolute  object-contain left-[20%] top-8"
         />
-        <div className="w-full max-w-2xl absolute md:top-[8%] top-[10%] md:left-[23%] left-0 flex items-center justify-center flex-col">
-          <h1 className="text-black leading-relaxed text-center font-bold text-3xl font-grotesque md:w-[80%] w-full">
+        <div className="w-full max-w-3xl absolute md:top-[20%] top-[10%] md:left-[23%] left-0 flex items-center justify-center flex-col">
+          <h1 className="text-black leading-relaxed text-center font-bold text-5xl font-grotesque md:w-[100%] w-full">
             Transforming{" "}
             <span className="relative">
               {" "}
@@ -44,7 +44,7 @@ const ProductManagement = () => {
             </span>{" "}
             into Market-Ready Products
           </h1>
-          <p className="text-sm text-subtext text-center md:text-left">
+          <p className="text-xl text-subtext text-center md:text-left">
             End-to-end product management to ensure your vision meets market
             needs.
           </p>

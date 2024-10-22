@@ -24,17 +24,17 @@ const Services = () => {
                 descri={item?.descri}
                 bgcolor={item?.bgcolor}
                 id={item?.id}
-                cardClass={"h-[458px]"}
+                cardClass={"h-[400px] rounded-xl"}
                 isbutton
               />
             ))}
           </div>
-          <div className="grid grid-cols-1  mt-12 rounded-xl w-full">
+          <div className="grid grid-cols-1  mt-12 rounded-2xl w-full">
             <div
-              className={`w-full space-y-4 p-4 px-8 relative flex flex-col h-[70vh] md:h-full  rounded-xl shadow-md bg-[#E4E1FF]`}
+              className={`w-full space-y-4 p-4 px-8 relative flex flex-col h-[70vh] md:h-full  rounded-xl bg-[#E4E1FF]`}
             >
               <div className=" w-full">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
                   <Image
                     src={"/prodmanage.svg"}
                     alt="cardicon"
@@ -44,8 +44,8 @@ const Services = () => {
                   />
                 </div>
               </div>
-              <h2 className={`text-black font-semibold`}>Product Management</h2>
-              <p className={`text-black text-lg md:w-[45%]`}>
+              <h2 className={`text-black font-bold text-lg`}>Product Management</h2>
+              <p className={`text-black text-sm md:w-[45%]`}>
                 At Techwave, our product management services are designed to
                 guide your product from concept to market success. We manage the
                 entire product lifecycle with a focus on strategic planning,
@@ -53,11 +53,11 @@ const Services = () => {
               </p>
               <Button
                 name="Explore"
-                buttonClass={`p-2 w-32 text-black border-2 border-black`}
+                buttonClass={`p-2 w-32 text-black border border-black`}
                 icon
               />
               <div className="w-full flex items-center justify-end md:pr-12">
-                <div className="w-60 absolute bottom-5">
+                <div className="w-60 absolute bottom-7">
                   <Image
                     src={"/productmanbg.svg"}
                     alt="imagebg"
@@ -66,7 +66,7 @@ const Services = () => {
                     className="object-contain"
                   />
                 </div>
-                <div className="w-60 absolute bottom-0 right-24">
+                <div className="w-40 absolute bottom-0 right-40">
                   <Image
                     src={"/prodman2.svg"}
                     alt="imagebg"

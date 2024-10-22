@@ -19,14 +19,14 @@ const Footer = () => {
                   className="md:w-30 w-36 h-20 object-contain"
                 />
               </div>
-              <h2 className="md:text-xs text-lg text-[#7A8AAB]">
+              <h2 className="md:text-[16px] text-lg text-[#7A8AAB]">
                 Contactus@techwaveteam.com
               </h2>
             </div>
             <div className="flex flex-col mb-4">
-              <h2 className="md:text-xs text-lg text-black font-semibold">Address</h2>
-              <h2 className="md:text-xs text-lg text-[#7A8AAB]">
-                101 Newton road, Lagos Nigeria
+              <h2 className="md:text-[16px] text-lg text-black font-semibold">Address</h2>
+              <h2 className="md:text-[16px] text-lg text-[#7A8AAB]">
+                Millenium estate, Gbagada, Lagos.
               </h2>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="md:flex items-center justify-between md:p-8 p-4">
               <div className="text-black flex flex-col gap-4 mb-8">
                 <p className="font-semibold">Our Works</p>
-                <div className="flex flex-col gap-1 font-light md:text-sm text-lg text-[#7A8AAB] space-y-3">
+                <div className="flex flex-col gap-1 font-light md:text-[16px] text-lg text-[#7A8AAB] space-y-3">
                   <Link href="#">Clearline</Link>
                   <Link href="#">Unilag Alumni</Link>
                   <Link href="#">TrueKeepers</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="text-black flex flex-col gap-4 mb-8">
                 <p className="font-semibold">Team</p>
-                <div className="flex flex-col gap-1 font-light md:text-sm text-lg text-[#7A8AAB] space-y-3">
+                <div className="flex flex-col gap-1 font-light md:text-[16px] text-lg text-[#7A8AAB] space-y-3">
                   <Link href="#">About Us</Link>
                   <Link href="#">Service we render</Link>
                   <Link href="#">Contact Us</Link>
@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
               <div className="text-black flex flex-col gap-4 mb-8">
                 <p className="font-semibold">Socials</p>
-                <div className="flex flex-col gap-1 font-light md:text-sm text-lg text-[#7A8AAB] space-y-3">
+                <div className="flex flex-col gap-1 font-light md:text-[16px] text-lg text-[#7A8AAB] space-y-3">
                   <Link href="#">Twitter</Link>
                   <Link href="#">LinkedIn</Link>
                   <Link href="#">Facebook</Link>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
         <Seperator />
 
-        <p className="text-center text-xs text-subtext mt-5">
+        <p className="text-center text-[16px] pb-5 text-black mt-5">
           © 2024 Techwave. All rights reserved.
         </p>
       </div>

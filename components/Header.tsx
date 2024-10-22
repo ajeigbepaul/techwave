@@ -11,17 +11,16 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   return (
-    <header className="w-full md:h-[20vh] h-[14vh] relative">
-      <div className="w-full max-w-6xl mx-auto flex items-center justify-between px-4 ">
-        <div className="w-40 h-32">
-          <Image
-            src={"/techwavelogo.svg"}
-            width={300}
-            height={200}
-            alt="techwave-logo"
-            className="w-32 h-28 object-contain"
-          />
-        </div>
+    <header className="w-full md:h-[20vh] h-[14vh] relative border-b border-b-[#B7CFFF]">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-14 pt-2 ">
+        <Image
+          src={"/techwavelogo.svg"}
+          width={190}
+          height={200}
+          alt="techwave-logo"
+          className="object-contain"
+        />
+
         <nav className="sm:flex hidden">
           <NavLinks />
         </nav>

@@ -6,8 +6,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="w-full min-h-screen md:mt-14 mt-10">
-      <div className="w-full h-[100vh] relative md:mt-10 top-0 mb-0">
+    <section className="w-full min-h-screen md:mt-8 mt-10">
+      <div className="w-full h-[100vh] relative md:mt-0 top-0 mb-0">
         <Image
           src={"/bg1black.svg"}
           alt="bannerimg"
@@ -53,9 +53,9 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-[110vh] relative mt-14 mb-0">
+      <div className="w-full md:h-[100vh] h-[110vh] relative mt-6 mb-0">
         <div className="  w-full md:px-12 px-2 h-full grid md:grid-cols-2 grid-cols-1">
-          <div className="w-full h-full flex items-start md:mt-20 md:ml-14 ml-0 mt-10 justify-center">
+          <div className="w-full h-full flex items-center justify-center">
             <div className="flex flex-col space-y-4 md:w-[80%] w-full">
               <div className="flex flex-col space-y-6 mb-6">
                 <h1 className="text-3xl text-black md:w-[70%] w-full font-bold text-left font-grotesque">
@@ -97,11 +97,11 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto  flex flex-col items-start justify-start mt-14 md:mt-0">
+      <div className="w-full md:h-[100vh] h-auto  flex flex-col items-start justify-start mt-14 md:mt-20">
         <div className="w-full md:px-24 px-2 flex flex-col">
           <div className="w-full flex mb-10 items-center justify-center ">
             <div className="w-56 relative h-10">
-              <h2 className="text-black mb-5  w-fit text-2xl font-semibold font-grotesque text-center">
+              <h2 className="text-black mb-5  w-fit text-2xl font-bold font-grotesque text-center">
                 Our Capabilities?
               </h2>
               <div className="w-24 h-10 ">
@@ -120,21 +120,21 @@ const page = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-10 md:mb-0">
               <div className="w-full flex items-center justify-center">
                 <Image
-                  src={"/dataanalyticimage2.svg"}
+                  src={"/dataanalyticimage2.png"}
                   alt="bannerimg2"
                   width={400}
                   height={250}
                   className="object-contain"
                 />
               </div>
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 {dataanlytics.map((item, idx) => (
                   <div
                     key={idx}
                     style={{
                       backgroundColor: item?.cardColor && item?.cardColor,
                     }}
-                    className={`w-full shadow-2xl h-[148px] space-y-2 p-0 relative flex flex-col  rounded-xl`}
+                    className={`w-full shadow-2xl shadow-[#e3ebfb] h-[152px] space-y-2 p-4 relative flex flex-col  rounded-xl`}
                   >
                     <div className=" w-full">
                       <div
@@ -149,10 +149,10 @@ const page = () => {
                         />
                       </div>
                     </div>
-                    <h2 className={`text-black text-sm px-2 font-semibold `}>
+                    <h2 className={`text-black text-sm font-semibold `}>
                       {item?.title}
                     </h2>
-                    <p className=" px-2 whitespace-normal text-subtext text-xs">
+                    <p className=" whitespace-normal text-subtext text-xs">
                       {item?.descri}
                     </p>
                   </div>

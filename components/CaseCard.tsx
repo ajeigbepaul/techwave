@@ -24,16 +24,16 @@ const CaseCard = ({
     <div className="w-full h-[600px] p-0 space-y-2">
       <div
         style={{ backgroundColor: cardColor }}
-        className="flex flex-col items-center h-[406px] p-2 rounded-2xl"
+        className="flex flex-col items-center h-[395px] p-2 rounded-2xl"
       >
         {/* Icon with dynamic size */}
-        <div className="h-24">
+        <div className="h-8 mt-6 w-full">
           <Image
             src={icon}
             alt="cardicon"
             width={styles.iconSize.width}
             height={styles.iconSize.height}
-            className="object-cover"
+            className={`${styles.iconPosition}`}
           />
         </div>
 
@@ -75,6 +75,7 @@ const CaseCard = ({
 
 const defaultStyle = {
   iconSize: { width: 170, height: 100 },
+  iconPosition:"object-cover",
   mainImagePosition: "top-10 left-5",
   mainImageSize: { width: 380, height: 350 },
   sideImagePosition: "bottom-0 right-10",
@@ -85,6 +86,7 @@ const defaultStyle = {
 const cardStyles: {
   [key: number]: {
     iconSize: { width: number; height: number };
+    iconPosition:string;
     mainImagePosition: string;
     mainImageSize: { width: number; height: number };
     sideImagePosition: string;
@@ -94,38 +96,42 @@ const cardStyles: {
   };
 } = {
   1: {
-    iconSize: { width: 170, height: 100 },
-    mainImagePosition: "top-10 left-5",
-    mainImageSize: { width: 350, height: 350 },
-    sideImagePosition: "bottom-0 right-4",
-    sideImageSize: { width: 150, height: 150 },
+    iconSize: { width: 190, height: 100 },
+    iconPosition:"object-cover ml-32",
+    mainImagePosition: "top-16 left-5",
+    mainImageSize: { width: 300, height: 350 },
+    sideImagePosition: "bottom-0 right-8",
+    sideImageSize: { width: 130, height: 150 },
     textSize: "text-sm",
     descrFontWeight: "font-semibold",
   },
   2: {
-    iconSize: { width: 300, height: 80 },
-    mainImagePosition: "top-12 left-8",
-    mainImageSize: { width: 360, height: 300 },
-    sideImagePosition: "bottom-5 right-12",
-    sideImageSize: { width: 130, height: 130 },
+    iconSize: { width: 350, height: 80 },
+    iconPosition:"object-cover ml-14",
+    mainImagePosition: "top-[91px] left-6",
+    mainImageSize: { width: 320, height: 300 },
+    sideImagePosition: "bottom-0 right-0",
+    sideImageSize: { width: 150, height: 130 },
     textSize: "text-sm",
     descrFontWeight: "font-semibold",
   },
   3: {
-    iconSize: { width: 140, height: 90 },
-    mainImagePosition: "top-8 left-6",
-    mainImageSize: { width: 405, height: 340 },
+    iconSize: { width: 180, height: 90 },
+    iconPosition:"object-cover ml-36",
+    mainImagePosition: "top-20 left-0",
+    mainImageSize: { width: 350, height: 340 },
     sideImagePosition: "bottom-3 right-8",
-    sideImageSize: { width: 160, height: 160 },
+    sideImageSize: { width: 140, height: 160 },
     textSize: "text-sm",
     descrFontWeight: "font-semibold",
   },
   4: {
-    iconSize: { width: 100, height: 110 },
-    mainImagePosition: "top-6 left-4",
-    mainImageSize: { width: 400, height: 370 },
+    iconSize: { width: 120, height: 110 },
+    iconPosition:"object-cover ml-4",
+    mainImagePosition: "top-[72px] left-4",
+    mainImageSize: { width: 350, height: 300 },
     sideImagePosition: "bottom-2 right-6",
-    sideImageSize: { width: 180, height: 180 },
+    sideImageSize: { width: 150, height: 180 },
     textSize: "text-sm",
     descrFontWeight: "font-semibold",
   },

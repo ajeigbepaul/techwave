@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${secondaryFont.variable} ${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col bg-gray-50`}
+        className={`${secondaryFont.variable} ${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col`}
       >
         {/* Header */}
         <header className="h-[14vh] w-full">

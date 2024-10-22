@@ -272,7 +272,7 @@ export const dataanlytics = [
   },
   {
     id: 2,
-    title: "Data Analysic",
+    title: "Data Analysis",
     icon: "/service.svg",
     cardColor: "#ffffff",
     descri:

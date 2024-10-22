@@ -16,7 +16,6 @@ const App = () => {
         <Experience />
         <CaseStudy />
         <Innovation />
-        <Founder/>
       </div>
     </main>
   );

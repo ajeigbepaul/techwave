@@ -38,7 +38,7 @@ function Slider({
       />
       <div className=" absolute top-0 w-full h-full grid md:grid-cols-2">
         <div className="w-full h-full flex items-start md:mt-24 mt-10 justify-center">
-          <div className="flex flex-col space-y-4 w-[80%]">
+          <div className="flex w-[80%]">
             {position === 1 ? (
               <BannerInfo
                 position={position}

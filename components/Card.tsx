@@ -13,8 +13,7 @@ const Card = ({
   isbutton,
   isborder,
   addedStyle,
-  addedStyleD
-  
+  addedStyleD,
 }: {
   image: string;
   icon: string;
@@ -24,20 +23,20 @@ const Card = ({
   id?: number;
   cardClass?: string;
   isbutton?: boolean;
-  isborder?:string;
-  addedStyle?:string;
-  addedStyleD?:string;
+  isborder?: string;
+  addedStyle?: string;
+  addedStyleD?: string;
 }) => {
   // Get the styles for the current id, fallback to default if id doesn't match
   return (
     <div
       style={{ backgroundColor: bgcolor && bgcolor }}
-      className={`w-full space-y-2 p-4 relative flex flex-col  rounded-xl shadow-md ${cardClass}`}
+      className={`w-full space-y-2 p-4 relative flex flex-col rounded-xl ${cardClass}`}
     >
       <div className=" w-full">
         <div
-          className={` w-12 h-12 rounded-full bg-white flex items-center justify-center  ${
-            isborder
+          className={`rounded-full bg-white flex items-center justify-center ${
+            isborder ? isborder : "w-8 h-8"
           } `}
         >
           <Image
@@ -50,11 +49,17 @@ const Card = ({
         </div>
       </div>
       <h2
-        className={`${id === 2 ? "text-black" : "text-white"} font-semibold ${addedStyle} `}
+        className={`${
+          id === 2 ? "text-black" : "text-white"
+        } font-bold ${addedStyle} `}
       >
         {title}
       </h2>
-      <p className={`${id === 2 ? "text-black" : "text-white"}  whitespace-normal ${addedStyleD}`}>
+      <p
+        className={`${
+          id === 2 ? "text-normal text-subtext" : " text-whitetext"
+        }  whitespace-normal text-xs pb-2 ${addedStyleD}`}
+      >
         {descri}
       </p>
       {isbutton && (
@@ -64,8 +69,8 @@ const Card = ({
             name="Explore"
             buttonClass={`p-2 w-32 ${
               id === 2
-                ? "text-black border-2 border-black"
-                : "text-white border-2 border-white"
+                ? "text-black border border-black"
+                : "text-white border border-white"
             }`}
             icon
           />

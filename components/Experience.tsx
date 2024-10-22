@@ -10,10 +10,10 @@ interface experienceProp {
 }
 const Experience = () => {
   return (
-    <section className="w-full h-auto mt-24 md:pb-10">
+    <section className="w-full h-auto mt-10 md:pb-10">
       <div className="w-full flex items-start justify-center flex-col">
         <div className=" flex items-start justify-center flex-col w-full">
-          <h2 className="text-black font-bold text-2xl md:w-[30%] font-grotesque text-left mt-5">
+          <h2 className="text-black font-bold text-3xl md:w-[40%] font-grotesque text-left mt-5">
             Our experience covers a wide range of{" "}
             <span className="text-brandcolor">industries.</span>
           </h2>
@@ -27,9 +27,9 @@ const Experience = () => {
               title={item?.title}
               descri={item?.descri}
               bgcolor={item?.cardColor}
-              cardClass={"h-[280px]"}
+              cardClass={"h-[280px] rounded-3xl"}
               id={2}
-              isborder="border border-brandcolor"
+              isborder="w-12 h-12 border border-brandcolor"
               addedStyle="text-2xl font-grotesque"
             />
           ))}

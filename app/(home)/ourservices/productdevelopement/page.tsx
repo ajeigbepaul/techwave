@@ -6,8 +6,8 @@ import React from "react";
 
 const ProductDev = () => {
   return (
-    <section className="w-full min-h-screen relative md:mt-14 mt-10">
-      <div className="w-full h-[100vh] mt-10">
+    <section className="w-full min-h-screen relative md:mt-6 mt-10">
+      <div className="w-full h-[100vh] mt-8">
         <Image
           src={"/productdevelopment.png"}
           alt="bannerimg"
@@ -15,7 +15,7 @@ const ProductDev = () => {
           height={750}
           className="w-screen relative h-full object-cover"
         />
-        <div className="absolute md:w-[70%] w-full md:top-[14%] top-10 md:px-24 px-2">
+        <div className="absolute md:w-[70%] w-full md:top-[10%] top-10 md:px-24 px-2">
           <div className="flex flex-col space-y-8 mb-6">
             <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
               Transforming Ideas into
@@ -33,18 +33,19 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  md:h-[70vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-10 md:mt-0">
-        <div className="w-full max-w-3xl mx-auto">
+      <div className="w-full  md:h-[90vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-0 md:mt-0 md:pt-0">
+        <div className="w-full max-w-3xl mx-auto -mt-10">
           <Heading
             noborder
+            addwidth="w-[600px]"
             name="Our Development Process"
             desc="Our process blends creativity, technology, and precision."
           />
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-2 md:px-0">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4 px-2 md:px-0">
             {productdevelopement.map((item, idx) => (
               <div
                 key={idx}
-                className="w-full rounded-[8px] md:p-2 p-3 flex items-center space-x-2 border border-[#B7CFFF] "
+                className="w-full rounded-[8px] bg-white md:p-2 md:h-16 p-3 flex items-center space-x-2 border border-[#B7CFFF] "
               >
                 <Image
                   src={item?.icon}
@@ -53,7 +54,7 @@ const ProductDev = () => {
                   height={8}
                   className={`w-6 h-6 rounded-full object-cover `}
                 />
-                <h2 className="text-black text-sm font-semibold">
+                <h2 className="text-black text-[15px]  font-bold">
                   {item?.title}
                 </h2>
               </div>

@@ -6,34 +6,37 @@ import React from "react";
 
 const ProductResearch = () => {
   return (
-    <section className="w-full min-h-screen max-w-6xl mx-auto flex flex-col md:mt-14 mt-10">
+    <section className="w-full min-h-screen max-w-6xl mx-auto flex flex-col md:mt-4 mt-10">
       <div className="md:p-14 p-2 w-full md:h-[70vh] h-[60vh]">
         <div className="w-full flex items-center space-x-2 mt-10">
-          <h2 className="text-black font-semibold text-lg">Research</h2>
+          <h2 className="text-black font-semibold text-lg">RESEARCH</h2>
           <div className="w-4 h-4 bg-gold rounded-full" />
-          <h2 className="text-black font-semibold text-lg">Ideate</h2>
+          <h2 className="text-black font-semibold text-lg">IDEATE</h2>
           <div className="w-4 h-4 bg-gold rounded-full" />
-          <h2 className="text-black font-semibold text-lg">Launch</h2>
+          <h2 className="text-black font-semibold text-lg">LAUNCH</h2>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-full flex flex-col mt-4 space-y-5 mb-10">
-            <h1 className="text-5xl font-bold w-[50%] font-grotesque">
+          <div className="w-[80%] flex flex-col mt-4 space-y-5 mb-10">
+            <h1 className="text-5xl font-bold w-[54%] font-grotesque">
               Product Research{" "}
             </h1>
             <h1 className="text-5xl font-bold w-fit font-grotesque">
               and<span className="bg-brandcolor px-2 text-white">Design</span>
             </h1>
           </div>
-          <div className="w-36 h-36 relative">
+          <div className="w-[20%]">
+          <div className="w-40 h-40 relative">
             {" "}
             <Image
               src={"/research.svg"}
               alt="aboutus"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               className={`object-contain`}
             />
           </div>
+          </div>
+          
         </div>
         <Button
           name="Book a session"
@@ -56,7 +59,7 @@ const ProductResearch = () => {
       <div className="w-full md:h-[100vh] h-auto pb-10 md:px-12 px-2 mt-20">
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-4 mb-8 md:mb-0">
-            <h1 className="text-xs text-brandcolor">Our Services</h1>
+            <h1 className="text-lg text-brandcolor">Our Services</h1>
             <h1 className="md:w-[75%] w-full text-black text-3xl font-bold font-grotesque">
               Comprehensive Product Development at Techwave
             </h1>
@@ -82,10 +85,11 @@ const ProductResearch = () => {
                   title={item?.title}
                   descri={item?.descri}
                   bgcolor={item?.cardColor}
-                  cardClass={"h-[220px] px-8"}
+                  cardClass={"h-[220px] px-8 shadow-2xl shadow-[#e3ebfb]"}
                   id={2}
                   addedStyle="text-xl font-grotesque"
                   addedStyleD="text-xs text-whitesubtext"
+                 
                 />
               ))}
             </div>

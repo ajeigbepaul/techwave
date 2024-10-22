@@ -10,7 +10,7 @@ const Pitch = () => {
   return (
     <section className="w-full min-h-screen md:mt-14 mt-10">
       <div className="w-full md:px-24 ">
-        <div className="w-full h-[80vh] relative rounded bg-black">
+        <div className="w-full h-[80vh] relative rounded">
           <Image
             src={"/pitchgradbg.svg"}
             alt="pitch"
@@ -57,7 +57,7 @@ const Pitch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[100vh] relative mt-4 mb-0">
+      <div className="w-full h-[80vh] relative mt-4 mb-0">
         <div className="md:px-24 px-2 w-full md:h-[100vh] h-auto">
           <div className="w-full h-full grid md:grid-cols-2 grid-cols-1">
             <div className="w-full h-full flex items-start md:mt-10 mt-10 justify-center">
@@ -88,7 +88,7 @@ const Pitch = () => {
       </div>
       <div className="w-full md:h-[90vh] h-auto bg-[#F9FBFF] md:px-24 px-2  flex flex-col items-center justify-center md:mt-10 mt-32">
         <div className="md:w-fit w-full ">
-          <h2 className="text-black md:text-2xl text-lg  font-semibold font-grotesque text-center">
+          <h2 className="text-black md:text-2xl text-lg  font-bold font-grotesque text-center">
             What we offer under pitch development
           </h2>
           <div className="w-24 h-10 relative">
@@ -107,7 +107,7 @@ const Pitch = () => {
             {pitch.map((item, idx) => (
               <div
                 key={idx}
-                className={`relative p-2 bg-white text-sm md:w-[100%] w-[100%] px-4 flex flex-col cursor-pointer items-start justify-center rounded-xl border-l-2 transition-all duration-300 border-l-[#B7CFFF] h-32
+                className={`relative p-2 bg-white text-sm md:w-[100%] w-[100%] px-4 flex flex-col cursor-pointer items-start justify-center rounded-[4px] border-l-2 transition-all duration-300 border-l-[#83BF6E] h-28
                 }`}
               >
                 <span className="text-sm font-grotesque text-black font-bold mb-4">

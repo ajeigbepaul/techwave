@@ -17,11 +17,12 @@ const Founder = () => {
             />
           </div>
           <div>
-            <h1 className="text-black font-semibold text-xl">Asikhia Iseoluwa</h1>
+            <h1 className="text-black font-bold text-2xl">Asikhia Iseoluwa</h1>
             <h1 className="font-semibold text-xl text-subtext">Founder & CEO</h1>
           </div>
         </div>
-        <div className="mt-10 md:mt-0 w-full">
+        <div className="mt-10 md:mt-0 w-[80%]">
+          
           <q className="text-black md:text-3xl text-xl  font-semibold md:w-[80%] w-[50%]">
             Together, we will reshape the digital landscape. Your vision,
             powered by our innovation, will redefine what’s possible.

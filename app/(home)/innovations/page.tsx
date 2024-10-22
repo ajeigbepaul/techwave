@@ -5,13 +5,13 @@ import React from "react";
 
 const Innovation = () => {
   return (
-    <section className="w-full md:mt-14 mt-10  min-h-screen md:px-24 px-2">
-      <div className="w-full h-[100vh] md:mt-24">
+    <section className="w-full md:mt-14 mt-10 min-h-screen md:px-24 px-2">
+      <div className="w-full h-[85vh] md:mt-24">
         <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
           <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
             <div className="flex flex-col space-y-4 w-[100%]">
               <div className="flex flex-col space-y-6 mb-6">
-                <h1 className="text-2xl text-black font-bold text-left font-grotesque md:w-[73%]w-full">
+                <h1 className="text-4xl text-black leading-10 font-bold text-left font-grotesque md:w-[85%] w-full">
                   Pioneering Solutions and Leading Innovation 
                 </h1>
                 <p className="text-[16px] text-subtext text-left w-full">
@@ -42,12 +42,12 @@ const Innovation = () => {
           name="Our personal projects"
           desc="These personal projects highlight our commitment to innovation and impactful solutions."
         />
-        <div className="w-full mt-0">
+        <div className="w-full md:mt-36">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
               <div className="flex flex-col space-y-4 w-[100%]">
                 <div className="flex flex-col space-y-6 mb-6">
-                  <h1 className="text-sm font-semibold text-gold">
+                  <h1 className="text-lg font-semibold text-gold">
                     Coming soon
                   </h1>
                   <Image
@@ -57,11 +57,11 @@ const Innovation = () => {
                     height={50}
                     className="object-cover"
                   />
-                  <h1 className="text-xl text-black font-bold text-left font-grotesque w-[73%]">
+                  <h1 className="text-2xl text-black font-bold text-left font-grotesque w-[73%]">
                     Empowering Online Safety, Blocking Access to Pornographic
                     Content
                   </h1>
-                  <p className="text-[16px] text-subtext text-left w-full">
+                  <p className="text-[14px] text-subtext text-left w-full">
                     {`SacredEyes is a powerful app designed to combat easy access to pornography by automatically blocking browsers from accessing adult content. Once installed, it disables access to all known pornographic sites and prevents redirects to such content, helping users maintain a safer and healthier online environment.`}
                   </p>
                 </div>
@@ -72,11 +72,11 @@ const Innovation = () => {
                 />
               </div>
             </div>
-            <div className="w-full h-full relative ">
+            <div className="w-full h-full relative flex items-center justify-center ">
               <Image
                 src={"/innovationcard2.png"}
                 alt="bannerimg"
-                width={400}
+                width={450}
                 height={400}
                 className="object-contain"
               />
@@ -84,14 +84,14 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto  mb-10 mt-32">
+      <div className="w-full md:h-[100vh] h-auto  mb-10 md:mt-40 md:pt-20">
         <div className="w-full mt-0">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full relative ">
               <Image
                 src={"/innovationcard3.png"}
                 alt="bannerimg"
-                width={400}
+                width={450}
                 height={400}
                 className="object-contain"
               />
@@ -99,7 +99,7 @@ const Innovation = () => {
             <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
               <div className="flex flex-col space-y-4 w-[100%]">
                 <div className="flex flex-col space-y-6 mb-6">
-                  <h1 className="text-sm font-semibold text-gold">
+                  <h1 className="text-lg font-semibold text-gold">
                     Coming soon
                   </h1>
                   <Image
@@ -109,11 +109,11 @@ const Innovation = () => {
                     height={50}
                     className="object-cover"
                   />
-                  <h1 className="text-xl text-black font-bold text-left font-grotesque w-[73%]">
+                  <h1 className="text-2xl text-black font-bold text-left font-grotesque w-[73%]">
                     Empowering Online Safety, Blocking Access to Pornographic
                     Content
                   </h1>
-                  <p className="text-[16px] text-subtext text-left w-full">
+                  <p className="text-[14px] text-subtext text-left w-full">
                     {`SacredEyes is a powerful app designed to combat easy access to pornography by automatically blocking browsers from accessing adult content. Once installed, it disables access to all known pornographic sites and prevents redirects to such content, helping users maintain a safer and healthier online environment.`}
                   </p>
                 </div>

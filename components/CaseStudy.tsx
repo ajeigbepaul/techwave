@@ -13,7 +13,7 @@ interface caseProps{
 }
 const CaseStudy = () => {
   return (
-    <section className="w-full h-auto mt-24 md:pb-10">
+    <section className="w-full h-auto mt-10 md:pb-10">
       <div className="w-full flex items-start justify-center flex-col">
         <Heading
           name="Case Studies"
