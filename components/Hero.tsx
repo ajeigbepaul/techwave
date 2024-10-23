@@ -25,7 +25,7 @@ const Hero = () => {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          className="w-full scrollbar-none h-full bg-orange-400"
+          className="w-full scrollbar-none h-full"
         >
           {banner.map((banr, i) => (
             <SwiperSlide key={i} className="swiperslide relative">

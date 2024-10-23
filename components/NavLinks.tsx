@@ -5,14 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 import { usePathname } from "next/navigation";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+
 import NavModal from "./NavModal";
 const NavLinks = () => {
   const [openDropdownId, setOpenDropdownId] = useState<number | null>(null); // State to manage dropdown visibility

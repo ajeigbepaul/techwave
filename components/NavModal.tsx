@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { navItems } from "@/data";
-
 interface AddCategoryModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -25,7 +23,7 @@ const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
       onClick={onClose}
     >
       <div
-        className="flex flex-col bg-white rounded-[4px] w-full md:max-w-xs md:-mt-32 -mt-52 md:-ml-40"
+        className="flex flex-col bg-white rounded-[4px] w-full lg:max-w-xs md:max-w-md md:-mt-32 -mt-52 md:-ml-40"
         onClick={handleModalClick}
       >
         <div className={cn(" p-2 px-4 z-50 transition-all duration-300 ease-in-out")}>

@@ -1,6 +1,5 @@
 import CaseStudy from "@/components/CaseStudy";
 import Experience from "@/components/Experience";
-import Founder from "@/components/Founder";
 import Hero from "@/components/Hero";
 import Innovation from "@/components/Innovation";
 import Services from "@/components/Services";
