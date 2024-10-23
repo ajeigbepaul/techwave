@@ -6,9 +6,9 @@ import React from "react";
 const Innovation = () => {
   return (
     <section className="w-full lg:mt-14 mt-10 min-h-screen lg:px-24 md:px-4 px-4">
-      <div className="w-full lg:h-[85vh] md:h-auto md:mt-24">
+      <div className="w-full lg:h-auto md:h-auto md:mt-24">
         <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
-          <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
+          <div className="w-full h-auto flex items-start md:mt-4 mt-10 justify-center">
             <div className="flex flex-col space-y-4 w-[100%]">
               <div className="flex flex-col space-y-6 mb-6">
                 <h1 className="text-4xl text-black leading-10 font-bold text-left font-grotesque md:w-[85%] w-full">
@@ -25,7 +25,7 @@ const Innovation = () => {
               />
             </div>
           </div>
-          <div className="w-full h-full relative ">
+          <div className="w-full h-auto relative ">
             <Image
               src={"/innovationcard1.png"}
               alt="bannerimg"
@@ -36,7 +36,7 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[100vh] md:h-auto h-auto mb-10 lg:mt-0 md:mt-14 mt-0">
+      <div className="w-full lg:auto md:h-auto h-auto mb-10 lg:mt-20 md:mt-14 mt-0">
         <Heading
           noborder
           name="Our personal projects"
@@ -84,7 +84,7 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto  mb-10 lg:mt-40 md:mt-24 md:pt-20">
+      <div className="w-full lg:h-auto md:h-auto h-auto  mb-10 lg:mt-20 md:mt-24 md:pt-20">
         <div className="w-full mt-0">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full relative ">

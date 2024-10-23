@@ -21,11 +21,11 @@ const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
   };
   return (
     <div
-      className="fixed px-4 py-4 top-0 left-0 h-screen z-50 w-full bg-[#00000026] flex items-center justify-center overflow-y-auto"
+      className="fixed px-4 py-4 top-0 left-0 h-screen z-50 w-full bg-[#00000026] flex md:items-start md:justify-center overflow-y-auto"
       onClick={onClose}
     >
       <div
-        className="flex flex-col bg-white rounded-[4px] w-full lg:max-w-xs md:max-w-md md:-mt-32 -mt-52 md:-ml-40"
+        className="flex flex-col bg-white rounded-[4px] w-full lg:max-w-xs md:max-w-md md:mt-24 -mt-52 md:-ml-40"
         onClick={handleModalClick}
       >
         <div

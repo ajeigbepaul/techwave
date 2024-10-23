@@ -6,7 +6,7 @@ import React from "react";
 const ProductManagement = () => {
   return (
     <section className="w-full min-h-screen md:mt-8 -mt-2">
-      <div className="w-full lg:h-[70vh] md:h-[50vh] h-auto relative">
+      <div className="w-full lg:h-[60vh] md:h-[50vh] h-auto relative">
         <Image
           src={"/productmanagmentgradient.svg"}
           alt="bannerimg"
@@ -59,7 +59,7 @@ const ProductManagement = () => {
           />
         </div>
       </div>
-      <div className="w-full max-w-4xl mx-auto lg:h-[80vh] md:h-[40vh] h-auto mt-20 px-4 md:pb-14 md:mt-0 mb-14 md:mb-0 ">
+      <div className="w-full max-w-4xl mx-auto lg:h-auto md:h-[40vh] h-auto mt-20 px-4 md:pb-14 md:mt-0 mb-14 md:mb-0 ">
         <div className="w-full h-full flex items-center justify-center">
           <div className="w-[1400px] lg:ml-20 md:ml-4 ">
             <Image
@@ -72,7 +72,7 @@ const ProductManagement = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl  mx-auto lg:h-[70vh] md:h-[50vh] h-auto mt-20 md:mt-0 px-4 md:px-4 lg:px-0">
+      <div className="w-full max-w-5xl  mx-auto lg:h-auto md:h-[50vh] h-auto mt-20 md:mt-0 px-4 md:px-4 lg:px-0">
         <div className="w-full h-full flex flex-col items-center justify-center">
           <h2 className="text-3xl ont-grotesque font-bold text-black text-center md:text-left">
             Our Expertise, Your Advantage
@@ -113,7 +113,7 @@ const ProductManagement = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto lg:h-[100vh] md:h-[60vh] md:mt-48 mt-10 px-4 md:px-4 lg:px-0">
+      <div className="w-full max-w-5xl mx-auto lg:h-auto md:h-[60vh] lg:mt-24 md:mt-48 mt-10 px-4 md:px-4 lg:px-0 lg:py-8">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image

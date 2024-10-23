@@ -4,7 +4,7 @@ import React from "react";
 const Founder = () => {
   return (
     
-    <div className="w-full lg:h-[80vh] md:h-[80vh] h-auto mt-20 lg:mt-0 md:mt-14">
+    <div className="w-full lg:h-[50vh] md:h-[50vh] h-auto mt-20 lg:mt-32 md:mt-24 lg:px-4 px-4">
       <div className="w-full grid md:grid-cols-2 grid-cols-1">
         <div className="w-full flex md:items-start items-center space-x-2">
           <div className="w-24 h-24">

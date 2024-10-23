@@ -5,7 +5,7 @@ const Workflow = () => {
   return (
     <section className="w-full min-h-screen md:mt-14 mt-10 relative">
       <Image src="/workflowdir.svg" alt="flowthroughaimg" height={144} width={200} className="absolute contain h-[1000px] z-20 lg:left-[40%] md:left-[34%] left-[30%] top-40 "/>
-      <div className="w-full lg:h-screen md:h-[60vh] h-auto md:px-24 px-0">
+      <div className="w-full lg:h-auto md:h-[60vh] h-auto md:px-24 px-0">
         <div className="text-2xl relative mt-24 h-10 px-4  w-full">
           <span className=" w-40">
             <Image
@@ -80,7 +80,7 @@ const Workflow = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[70vh] md:h-[50vh] md:px-24 px-2 bg-brandcolor">
+      <div className="w-full lg:h-[50vh] md:h-[50vh] md:px-24 px-2 bg-brandcolor">
         <div className="w-full grid lg:grid-cols-2 md:grid-cols-2 gap-8">
           <div className="w-full h-full flex  items-start justify-start">
             {" "}

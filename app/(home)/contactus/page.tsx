@@ -5,10 +5,10 @@ import React from "react";
 
 const Contactus = () => {
   return (
-    <section className="w-full min-h-screen lg:mt-14 mt-10">
+    <section className="w-full min-h-screen lg:mt-14 md:mt-10 mt-10">
       <div className="w-full max-w-4xl mx-auto">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-          <div className="w-full">
+          <div className="w-full md:mx-4 mx-4">
             <h1 className="text-black mb-5 text-lg font-bold w-[50%]">
               Consult with our product analytics expert
             </h1>

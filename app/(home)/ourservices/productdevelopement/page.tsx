@@ -7,7 +7,7 @@ import React from "react";
 const ProductDev = () => {
   return (
     <section className="w-full min-h-screen relative md:mt-6 -mt-8">
-      <div className="w-full h-[100vh] mt-8">
+      <div className="w-full lg:h-[90vh] md:h-[70vh] h-[60vh] mt-8">
           <Image
             src={"/productdevelopment.png"}
             alt="bannerimg"
@@ -34,7 +34,7 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  md:h-[90vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-20 md:mt-0 md:pt-0 px-4">
+      <div className="w-full  lg:h-[70vh] md:h-[60vh] h-[80vh] bg-[#F9FBFF] flex items-center justify-center mt-0  md:mt-0 lg:mt-0 lg:py-14 py-24 md:pt-0 px-4">
         <div className="w-full max-w-3xl mx-auto -mt-10">
           <Heading
             noborder
@@ -63,14 +63,14 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl px-4 md:px-2 mx-auto md:h-[100vh] h-auto md:mt-14 mt-10">
+      <div className="w-full max-w-5xl px-4 md:px-2 mx-auto lg:h-auto lg:py-4 md:h-[60vh] h-auto md:mt-14 mt-10">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image
               src={"/productdevelopment2.png"}
               alt="bannerimg"
-              width={450}
-              height={450}
+              width={400}
+              height={400}
               className="object-contain"
             />
           </div>

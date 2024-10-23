@@ -7,7 +7,7 @@ import React from "react";
 const page = () => {
   return (
     <section className="w-full min-h-screen md:mt-8 mt-0">
-      <div className="w-full lg:h-[100vh] md:h-[80vh] relative md:mt-0 top-0 mb-0">
+      <div className="w-full lg:h-auto md:h-[90vh] h-[90vh]  relative md:mt-0 top-0 mb-0">
         <Image
           src={"/bg1black.svg"}
           alt="bannerimg"
@@ -22,7 +22,7 @@ const page = () => {
           height={750}
           className="w-screen absolute top-0 h-full object-cover"
         />
-        <div className=" absolute top-0 w-full h-full grid md:grid-cols-2 grid-cols-1">
+        <div className=" absolute top-0 w-full h-full grid lg:grid-cols-2 grid-cols-1">
           <div className="w-full h-full px-2 md:px-0 flex items-start md:mt-24 mt-10 justify-center">
             <div className="flex flex-col space-y-4 md:w-[80%]">
               <div className="flex flex-col space-y-6 mb-6">
@@ -48,12 +48,12 @@ const page = () => {
               alt="bannerimg"
               width={450}
               height={450}
-              className="object-contain absolute md:top-14 -top-48 lg:left-10 md:left-0"
+              className="object-contain absolute md:-top-60 lg:top-40 -top-48 lg:left-10 md:left-40"
             />
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[100vh] md:h-[100vh] h-[110vh] relative lg:mt-6 md:mt-0 -mt-14 mb-0">
+      <div className="w-full lg:h-auto lg:py-20 md:h-[100vh] h-[90vh] relative lg:mt-6 md:mt-0 -mt-14 mb-0">
         <div className="  w-full lg:px-12 md:px-4 px-4 h-full grid lg:grid-cols-2 grid-cols-1">
           <div className="w-full h-full flex items-center justify-center">
             <div className="flex flex-col space-y-4 md:w-[80%] w-full">
@@ -78,14 +78,14 @@ const page = () => {
               alt="aboutus"
               width={100}
               height={100}
-              className={`object-contain absolute md:bottom-16 bottom-20  left-10`}
+              className={`object-contain absolute lg:bottom-0 md:bottom-16 bottom-20 left-2`}
             />
             <Image
               src={"/dataanalyticimage.svg"}
               alt="bannerimg"
-              width={380}
-              height={450}
-              className="object-contain z-50 absolute md:bottom-20 bottom-0 md:left-24"
+              width={300}
+              height={300}
+              className="object-contain z-50 absolute lg:bottom-0 md:bottom-20 bottom-0 md:left-24 left-14"
             />
             <Image
               src={"/whatwedoright.svg"}
@@ -97,7 +97,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto  flex flex-col items-start justify-start mt-14 md:mt-20">
+      <div className="w-full lg:h-auto lg:py-4 md:h-[90vh] h-auto  flex flex-col items-start justify-start mt-14 md:mt-20">
         <div className="w-full md:px-24 px-2 flex flex-col">
           <div className="w-full flex mb-10 items-center justify-center ">
             <div className="w-56 relative h-10">

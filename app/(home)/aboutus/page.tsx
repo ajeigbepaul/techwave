@@ -31,8 +31,8 @@ const About = () => {
   };
 
   return (
-    <section className="w-full  max-w-5xl mx-auto min-h-screen px-4 lg:px-0 lg:mt-14 md:mt-14 mt-0 relative">
-      <div className="w-full lg:h-[140vh] md:h-[70vh] h-[70vh] relative lg:pt-14 md:pt-0 pt-52 ">
+    <section className="w-full  max-w-5xl mx-auto min-h-screen px-4 lg:px-0 lg:mt-14 md:mt-14 mt-0">
+      <div className="w-full lg:h-auto md:h-auto h-[70vh] relative lg:pt-14 md:pt-0 pt-52 ">
       {loading && ( // Show loader skeleton when loading
         <div className="absolute inset-0 flex items-start justify-start bg-gray-200">
           <div className="animate-pulse w-full h-2/4 bg-gray-300 rounded-2xl"></div>
@@ -48,7 +48,7 @@ const About = () => {
         />
 
         {/* Text and button box for desktop and tablet (hidden on mobile) */}
-        <div className="lg:w-[52%] md:w-[52%] md:h-72 h-auto md:flex hidden flex-col space-y-3 rounded-xl p-4 px-4 z-30 bg-black border-4 border-brandcolor absolute md:-bottom-4 lg:-bottom-4 lg:left-4">
+        <div className="lg:w-[52%] md:w-[52%] md:h-72 h-auto md:flex hidden flex-col space-y-3 rounded-xl p-4 px-4  bg-black border-4 border-brandcolor absolute lg:-bottom-20 -bottom-32">
           <p className="lg:text-2xl leading-10 w-[100%] text-sm text-white font-semibold font-grotesque">
             Techwave Africa is a Faith-Driven Tech Startup with the vision to
             build innovative solutions that bring answers to the problem and
@@ -71,7 +71,7 @@ const About = () => {
       </div>
 
       {/* "Why Us?" Section */}
-      <div className="w-full lg:h-[100vh] h-[50vh] flex flex-col items-center justify-center lg:mt-10 mt-2 ">
+      <div className="w-full lg:h-auto md:h-[auto] h-[35vh] flex flex-col items-center justify-center lg:mt-48 md:mt-48 mt-2 lg:px-4 px-4 ">
         <div className="w-40">
           <h2 className="text-black text-2xl font-semibold font-grotesque text-center">
             Why us?
@@ -109,7 +109,7 @@ const About = () => {
         </div>
 
         {tab ? (
-          <div className="grid lg:grid-cols-2 gap-4 p-2 lg:h-[40vh] h-auto mt-10">
+          <div className="grid lg:grid-cols-2 gap-4 p-2 lg:h-auto h-auto mt-10">
             <div>
               <h2 className="text-black lg:text-3xl text-lg font-semibold lg:w-[90%] font-grotesque">
                 Empowering the Future Through Faith and Innovation
@@ -131,7 +131,7 @@ const About = () => {
       </div>
 
       {/* What We Do Section */}
-      <div className="w-full lg:h-[100vh] md:h-[80vh] h-[120vh] pb-10 flex flex-col lg:mt-4 space-x-2 p-0 relative ">
+      <div className="w-full lg:h-auto lg:px-4 px-4 md:h-[80vh] h-[120vh] pb-10 flex flex-col lg:mt-32 md:mt-24 mt-20 space-x-2 p-0 relative ">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
           <div>
             <div className="relative h-12">
@@ -188,27 +188,27 @@ const About = () => {
             alt="aboutus"
             width={100}
             height={100}
-            className="object-contain absolute lg:-bottom-10 lg:left-0 -left-[40px] -bottom-10"
+            className="object-contain absolute lg:-bottom-10 lg:left-0 md:-left-[40px] -left-[40px] md:-bottom-10 bottom-8"
           />
           <Image
             src={"/aboutuscard.png"}
             alt="aboutus"
             width={350}
             height={200}
-            className="object-contain absolute lg:left-[120px] md:left-[100px] left-10 lg:-bottom-16 -bottom-10"
+            className="object-contain absolute lg:left-[120px] md:left-[100px] left-10 lg:-bottom-40 md:-bottom-10 bottom-20"
           />
           <Image
             src={"/aboutuscardr.png"}
             alt="aboutus"
             width={100}
             height={100}
-            className="object-contain absolute lg:left-[48%] left-[88%] lg:bottom-20 bottom-20"
+            className="object-contain absolute lg:left-[48%] md:left-[88%] left-[90%] lg:bottom-20 md:bottom-20 bottom-60"
           />
         </div>
       </div>
 
       {/* Work Process Section */}
-      <div className="w-full lg:h-[100vh] h-auto flex flex-col space-y-5 mt-40">
+      <div className="w-full lg:h-auto h-auto flex flex-col space-y-5 lg:mt-60 mt-40 lg:px-4 px-4">
         <Heading
           name="Work process"
           desc="We work step by step to achieve better growth results."
