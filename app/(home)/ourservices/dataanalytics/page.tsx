@@ -7,7 +7,7 @@ import React from "react";
 const page = () => {
   return (
     <section className="w-full min-h-screen md:mt-8 mt-0">
-      <div className="w-full h-[100vh] relative md:mt-0 top-0 mb-0">
+      <div className="w-full lg:h-[100vh] md:h-[80vh] relative md:mt-0 top-0 mb-0">
         <Image
           src={"/bg1black.svg"}
           alt="bannerimg"
@@ -48,13 +48,13 @@ const page = () => {
               alt="bannerimg"
               width={450}
               height={450}
-              className="object-contain absolute md:top-14 -top-48 md:left-10"
+              className="object-contain absolute md:top-14 -top-48 lg:left-10 md:left-0"
             />
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-[110vh] relative md:mt-6 -mt-14 mb-0">
-        <div className="  w-full md:px-12 px-2 h-full grid md:grid-cols-2 grid-cols-1">
+      <div className="w-full lg:h-[100vh] md:h-[100vh] h-[110vh] relative lg:mt-6 md:mt-0 -mt-14 mb-0">
+        <div className="  w-full lg:px-12 md:px-4 px-4 h-full grid lg:grid-cols-2 grid-cols-1">
           <div className="w-full h-full flex items-center justify-center">
             <div className="flex flex-col space-y-4 md:w-[80%] w-full">
               <div className="flex flex-col space-y-6 mb-6">
@@ -117,7 +117,7 @@ const page = () => {
             </div>
           </div>
           <div>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-10 md:mb-0">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mb-10 md:mb-0">
               <div className="w-full flex items-center justify-center">
                 <Image
                   src={"/dataanalyticimage2.png"}

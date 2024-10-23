@@ -6,7 +6,7 @@ import React from "react";
 const ProductManagement = () => {
   return (
     <section className="w-full min-h-screen md:mt-8 -mt-2">
-      <div className="w-full md:h-[70vh] h-auto relative">
+      <div className="w-full lg:h-[70vh] md:h-[50vh] h-auto relative">
         <Image
           src={"/productmanagmentgradient.svg"}
           alt="bannerimg"
@@ -35,10 +35,10 @@ const ProductManagement = () => {
           height={40}
           className="absolute  object-contain md:left-[34%] left-[18%] md:bottom-2 -bottom-16"
         />
-        <div className="w-full max-w-3xl absolute md:top-[20%] top-[10%] md:left-[23%] left-0 flex items-center justify-center flex-col">
+        <div className="w-full max-w-3xl md:px-4 absolute md:top-[20%] top-[10%] lg:left-[23%] md:left-0 left-0 flex items-center justify-center flex-col">
           <h1 className="text-black relative leading-relaxed text-center font-extrabold md:text-5xl text-3xl font-grotesque md:w-[100%] w-[83%]">
             Transforming Ideas into Market-Ready Products
-            <span className="absolute left-[68%] top-[28%] md:w-72 w-20">
+            <span className="absolute lg:left-[68%] md:left-[56%] top-[28%] md:w-72 w-20">
               {" "}
               <Image
                 src={"/idea.svg"}
@@ -59,9 +59,9 @@ const ProductManagement = () => {
           />
         </div>
       </div>
-      <div className="w-full max-w-4xl mx-auto md:h-[80vh] h-auto mt-20 px-4 md:pb-14 md:mt-0 mb-14 md:mb-0 ">
+      <div className="w-full max-w-4xl mx-auto lg:h-[80vh] md:h-[40vh] h-auto mt-20 px-4 md:pb-14 md:mt-0 mb-14 md:mb-0 ">
         <div className="w-full h-full flex items-center justify-center">
-          <div className="w-[1400px] md:ml-20 ">
+          <div className="w-[1400px] lg:ml-20 md:ml-4 ">
             <Image
               src={"/productmanagementbg.png"}
               alt="productmanimg"
@@ -72,7 +72,7 @@ const ProductManagement = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl  mx-auto md:h-[70vh] h-auto mt-20 md:mt-0 px-2 md:px-0">
+      <div className="w-full max-w-5xl  mx-auto lg:h-[70vh] md:h-[50vh] h-auto mt-20 md:mt-0 px-4 md:px-4 lg:px-0">
         <div className="w-full h-full flex flex-col items-center justify-center">
           <h2 className="text-3xl ont-grotesque font-bold text-black text-center md:text-left">
             Our Expertise, Your Advantage
@@ -113,7 +113,7 @@ const ProductManagement = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl mx-auto h-[100vh] md:mt-48 mt-10 px-2 md:px-0">
+      <div className="w-full max-w-5xl mx-auto h-[100vh] md:mt-48 mt-10 px-4 md:px-4 lg:px-0">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image
