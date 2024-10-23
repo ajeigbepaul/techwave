@@ -5,9 +5,9 @@ import React from "react";
 
 const Contactus = () => {
   return (
-    <section className="w-full min-h-screen md:mt-14 mt-10">
+    <section className="w-full min-h-screen lg:mt-14 mt-10">
       <div className="w-full max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
           <div className="w-full">
             <h1 className="text-black mb-5 text-lg font-bold w-[50%]">
               Consult with our product analytics expert
@@ -24,10 +24,10 @@ const Contactus = () => {
               height={400}
               className="object-contain"
             />
-            <div className="md:flex items-start md:p-0 p-4 mt-5 space-x-4">
+            <div className="lg:flex items-start lg:p-0 p-4 mt-5 space-x-4">
               <div className="text-black flex flex-col gap-4 mb-8">
                 <p className="font-semibold">Contact information</p>
-                <div className="flex flex-col gap-1 font-light md:text-sm text-lg text-[#7A8AAB] space-y-3">
+                <div className="flex flex-col gap-1 font-light lg:text-sm text-lg text-[#7A8AAB] space-y-3">
                   <p className="text-[#7A8AAB] text-sm">
                     You can also reach us on other platforms
                   </p>
@@ -60,7 +60,7 @@ const Contactus = () => {
 
               <div className="text-black flex flex-col gap-4 mb-8">
                 <p className="font-semibold">Socials</p>
-                <div className="flex flex-col gap-1 font-light md:text-sm text-lg text-[#7A8AAB] space-y-3">
+                <div className="flex flex-col gap-1 font-light lg:text-sm text-lg text-[#7A8AAB] space-y-3">
                   <Link href="#">Twitter</Link>
                   <Link href="#">LinkedIn</Link>
                   <Link href="#">Facebook</Link>

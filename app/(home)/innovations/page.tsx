@@ -5,8 +5,8 @@ import React from "react";
 
 const Innovation = () => {
   return (
-    <section className="w-full md:mt-14 mt-10 min-h-screen md:px-24 px-2">
-      <div className="w-full h-[85vh] md:mt-24">
+    <section className="w-full lg:mt-14 mt-10 min-h-screen lg:px-24 md:px-4 px-4">
+      <div className="w-full lg:h-[85vh] md:h-auto md:mt-24">
         <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
           <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
             <div className="flex flex-col space-y-4 w-[100%]">
@@ -36,13 +36,13 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto mb-10 mt-0">
+      <div className="w-full lg:h-[100vh] md:h-auto h-auto mb-10 lg:mt-0 md:mt-14 mt-0">
         <Heading
           noborder
           name="Our personal projects"
           desc="These personal projects highlight our commitment to innovation and impactful solutions."
         />
-        <div className="w-full md:mt-36">
+        <div className="w-full lg:mt-36 md:mt-20 mt-0">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full flex items-start md:mt-4 mt-10 justify-center">
               <div className="flex flex-col space-y-4 w-[100%]">
@@ -84,7 +84,7 @@ const Innovation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto  mb-10 md:mt-40 md:pt-20">
+      <div className="w-full md:h-[100vh] h-auto  mb-10 lg:mt-40 md:mt-24 md:pt-20">
         <div className="w-full mt-0">
           <div className="w-full h-full grid md:grid-cols-2 gap-8">
             <div className="w-full h-full relative ">

@@ -50,7 +50,7 @@ const NavLinks = () => {
     // Navigate to the link if it's not '#'
   };
   return (
-    <div className="md:flex items-center w-full">
+    <div className="lg:flex items-center w-full">
       {navItems.map((item) => (
         <div
           onClick={() => handleNavClick(item.id, item.link)}
