@@ -12,7 +12,7 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
   return (
     <header className="w-full md:h-[20vh] h-[14vh] relative border-b border-b-[#B7CFFF]">
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-14 pt-2 ">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between md:px-14 px-4 md:pt-2 pt-8 ">
         <Image
           src={"/techwavelogo.svg"}
           width={190}

@@ -23,8 +23,8 @@ const About = () => {
     setHovered(null);
   };
   return (
-    <section className="w-full max-w-5xl mx-auto min-h-screen px-2 md:px-0 md:mt-14 mt-10">
-      <div className="w-full md:h-[100vh] h-[50vh] relative md:pt-14">
+    <section className="w-full max-w-5xl mx-auto min-h-screen px-4 md:px-0 md:mt-14 mt-0 relative">
+      <div className="w-full md:h-[100vh] h-[50vh] relative md:pt-14 pt-44">
         <Image
           src={"/aboutus.png"}
           alt="aboutus"
@@ -33,17 +33,22 @@ const About = () => {
           className={`object-contain rounded-xl`}
         />
 
-        <div className="md:w-[52%] md:h-72 h-60 flex flex-col space-y-3 rounded-xl p-4 px-4 z-30 bg-black border-4 border-brandcolor absolute md:-bottom-14 md:left-4">
-          <p className="md:flex hidden md:text-2xl leading-10 w-[100%] text-sm text-white font-semibold font-grotesque">
+        <div className="md:w-[52%] md:h-72 h-auto md:flex hidden flex-col space-y-3 rounded-xl p-4 px-4 z-30 bg-black border-4 border-brandcolor absolute md:-bottom-14 md:left-4">
+          <p className=" md:text-2xl leading-10 w-[100%] text-sm text-white font-semibold font-grotesque">
             Techwave Africa is a Faith-Driven Tech Startup with the vision to
             build innovative solutions that bring answers to the problem and
             needs of businesses and individuals around the world.
           </p>
-          <p className="md:hidden ">
+          <div className="w-full md:pt-8">
+            <Button name="Book a session" buttonClass="p-2 w-36 bg-white " />
+          </div>
+        </div>
+        <div className="md:hidden top-0 h-auto flex flex-col space-y-3 rounded-xl p-4 px-4 z-30 bg-black border-4 border-brandcolor absolute">
+          <p className=" text-lg text-white font-semibold font-grotesque w-[60%]">
             We have a dedicated team committed to bringing your dreams to life
           </p>
           <div className="w-full md:pt-8">
-            <Button name="Book a session" buttonClass="p-2 w-36 bg-white " />
+            <Button name="Book a session" buttonClass="p-2 w-32 bg-white " />
           </div>
         </div>
       </div>
@@ -205,14 +210,14 @@ const About = () => {
             alt="aboutus"
             width={100}
             height={100}
-            className={`object-contain absolute md:-bottom-10 bottom-4`}
+            className={`object-contain absolute md:-bottom-10 md:left-0 -left-[40px] -bottom-10`}
           />
           <Image
             src={"/aboutuscard.png"}
             alt="aboutus"
             width={350}
             height={200}
-            className={`object-contain absolute md:left-[120px] left-12 md:-bottom-16 bottom-2 `}
+            className={`object-contain absolute md:left-[120px] left-10 md:-bottom-16 -bottom-10 `}
           />
           <Image
             src={"/aboutuscardr.png"}

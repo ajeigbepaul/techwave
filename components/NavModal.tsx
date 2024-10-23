@@ -25,7 +25,7 @@ const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
       onClick={onClose}
     >
       <div
-        className="flex flex-col bg-white rounded-[4px] w-full max-w-xs -mt-32 -ml-40"
+        className="flex flex-col bg-white rounded-[4px] w-full md:max-w-xs md:-mt-32 -mt-52 md:-ml-40"
         onClick={handleModalClick}
       >
         <div className={cn(" p-2 px-4 z-50 transition-all duration-300 ease-in-out")}>

@@ -8,9 +8,9 @@ const Pitch = () => {
     /* incase this did not show change it to the aboutuscardr and aboutuscardl */
   }
   return (
-    <section className="w-full min-h-screen md:mt-14 mt-10">
-      <div className="w-full md:px-24 ">
-        <div className="w-full h-[80vh] relative rounded">
+    <section className="w-full min-h-screen md:mt-14 -mt-2">
+      <div className="w-full md:px-24">
+        <div className="w-full h-[80vh] bg-black md:bg-transparent relative rounded">
           <Image
             src={"/pitchgradbg.svg"}
             alt="pitch"
@@ -58,7 +58,7 @@ const Pitch = () => {
         </div>
       </div>
       <div className="w-full h-[80vh] relative mt-4 mb-0">
-        <div className="md:px-24 px-2 w-full md:h-[100vh] h-auto">
+        <div className="md:px-24 px-4 w-full md:h-[100vh] h-auto">
           <div className="w-full h-full grid md:grid-cols-2 grid-cols-1">
             <div className="w-full h-full flex items-start md:mt-10 mt-10 justify-center">
               <div className="flex flex-col space-y-4 md:w-[80%] w-full">

@@ -7,43 +7,54 @@ import React from "react";
 const ProductResearch = () => {
   return (
     <section className="w-full min-h-screen max-w-6xl mx-auto flex flex-col md:mt-4 mt-10">
-      <div className="md:p-14 p-2 w-full md:h-[70vh] h-[60vh]">
-        <div className="w-full flex items-center space-x-2 mt-10">
+      <div className="md:p-14 p-2 px-4 w-full md:h-[70vh] h-[60vh]">
+        <div className="w-full flex items-center space-x-2 md:mt-10 mt-2 mb-5 md:mb-0">
           <h2 className="text-black font-semibold text-lg">RESEARCH</h2>
           <div className="w-4 h-4 bg-gold rounded-full" />
           <h2 className="text-black font-semibold text-lg">IDEATE</h2>
           <div className="w-4 h-4 bg-gold rounded-full" />
           <h2 className="text-black font-semibold text-lg">LAUNCH</h2>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="w-[80%] flex flex-col mt-4 space-y-5 mb-10">
-            <h1 className="text-5xl font-bold w-[54%] font-grotesque">
+        <div className="md:flex items-center justify-between">
+          <div className="flex md:hidden w-[40%]">
+            <div className=" w-40 h-40 relative ">
+              {" "}
+              <Image
+                src={"/research.svg"}
+                alt="aboutus"
+                width={300}
+                height={300}
+                className={`object-contain`}
+              />
+            </div>
+          </div>
+          <div className="md:w-[80%] w-full flex flex-col mt-4 space-y-5 mb-10">
+            <h1 className="text-5xl font-bold md:w-[54%] w-[100%] font-grotesque">
               Product Research{" "}
             </h1>
             <h1 className="text-5xl font-bold w-fit font-grotesque">
               and<span className="bg-brandcolor px-2 text-white">Design</span>
             </h1>
           </div>
-          <div className="w-[20%]">
-          <div className="w-40 h-40 relative">
-            {" "}
-            <Image
-              src={"/research.svg"}
-              alt="aboutus"
-              width={300}
-              height={300}
-              className={`object-contain`}
-            />
+          <div className="md:flex hidden w-[20%]">
+            <div className="w-40 h-40 relative ">
+              {" "}
+              <Image
+                src={"/research.svg"}
+                alt="aboutus"
+                width={300}
+                height={300}
+                className={`object-contain`}
+              />
+            </div>
           </div>
-          </div>
-          
         </div>
         <Button
           name="Book a session"
-          buttonClass="w-36 p-3 bg-black text-white"
+          buttonClass="w-36 p-3 bg-black text-white mt-10"
         />
       </div>
-      <div className="w-full md:h-[70vh] h-auto pb-10 md:px-12 px-2">
+      <div className="w-full md:h-[70vh] h-auto pb-10 md:px-12 px-4">
         <div className="w-full">
           <div className="md:w-3/4 w-full ">
             <Image
@@ -56,7 +67,7 @@ const ProductResearch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-auto pb-10 md:px-12 px-2 mt-20">
+      <div className="w-full md:h-[100vh] h-auto pb-10 md:px-12 px-4 mt-20">
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-4 mb-8 md:mb-0">
             <h1 className="text-lg text-brandcolor">Our Services</h1>
@@ -89,7 +100,6 @@ const ProductResearch = () => {
                   id={2}
                   addedStyle="text-xl font-grotesque"
                   addedStyleD="text-xs text-whitesubtext"
-                 
                 />
               ))}
             </div>

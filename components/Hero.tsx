@@ -13,7 +13,7 @@ import { banner } from "@/data";
 const Hero = () => {
   // Navigation, Pagination,
   return (
-    <section className="mt-8  w-full h-screen scrollbar-none ">
+    <section className="md:mt-8 -mt-10  w-full h-screen scrollbar-none ">
       <div className="w-full h-[full]">
         <Swiper
           spaceBetween={30}

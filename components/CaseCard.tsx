@@ -97,7 +97,7 @@ const cardStyles: {
 } = {
   1: {
     iconSize: { width: 190, height: 100 },
-    iconPosition:"object-cover ml-32",
+    iconPosition:"object-cover md:ml-32 ml-20",
     mainImagePosition: "top-16 left-5",
     mainImageSize: { width: 300, height: 350 },
     sideImagePosition: "bottom-0 right-8",
@@ -107,7 +107,7 @@ const cardStyles: {
   },
   2: {
     iconSize: { width: 350, height: 80 },
-    iconPosition:"object-cover ml-14",
+    iconPosition:"object-cover md:ml-14 ml-1",
     mainImagePosition: "top-[91px] left-6",
     mainImageSize: { width: 320, height: 300 },
     sideImagePosition: "bottom-0 right-0",
@@ -117,7 +117,7 @@ const cardStyles: {
   },
   3: {
     iconSize: { width: 180, height: 90 },
-    iconPosition:"object-cover ml-36",
+    iconPosition:"object-cover md:ml-36 ml-20",
     mainImagePosition: "top-20 left-0",
     mainImageSize: { width: 350, height: 340 },
     sideImagePosition: "bottom-3 right-8",
@@ -127,7 +127,7 @@ const cardStyles: {
   },
   4: {
     iconSize: { width: 120, height: 110 },
-    iconPosition:"object-cover ml-4",
+    iconPosition:"object-cover md:ml-4",
     mainImagePosition: "top-[72px] left-4",
     mainImageSize: { width: 350, height: 300 },
     sideImagePosition: "bottom-2 right-6",

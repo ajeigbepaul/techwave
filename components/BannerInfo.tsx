@@ -42,7 +42,7 @@ const BannerInfo = ({
             {description1b}
           </h1>
 
-          <p className="text-whitetext text-md text-left w-[60%]">{descri2}</p>
+          <p className="text-whitetext text-md text-left md:w-[40%] w-full">{descri2}</p>
         </div>
       )}
       <div className="flex items-center space-x-2 gap-4 mt-14">

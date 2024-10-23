@@ -20,10 +20,10 @@ const Innovation = () => {
           height={500}
           className="absolute top-0 left-10"
         />
-        <div className="grid md:grid-cols-2 w-full bg-black h-[85vh] rounded-2xl px-4 md:px-4">
+        <div className="grid md:grid-cols-2 w-full bg-black md:h-[85vh] h-[75vh] rounded-2xl px-4 md:px-4">
           <div className="w-full flex items-center justify-center">
-            <div className="md:w-[87%] h-[370px] rounded-3xl border-2 border-white bg-[#000000] z-30 flex flex-col mt-72 md:mt-0 ">
-              <div className="flex items-start flex-col p-8 my-3 space-y-5 w-full">
+            <div className="md:w-[87%] md:h-[370px] h-[250px] rounded-3xl border-2 border-white bg-[#000000] z-30 flex flex-col mt-72 md:mt-0 ">
+              <div className="flex items-start flex-col md:p-8 p-4 my-3 space-y-5 w-full">
                 <div className="flex items-start space-x-3 ">
                   <Image
                     src={"/centrilearn.svg"}
@@ -40,7 +40,7 @@ const Innovation = () => {
                     className="object-cover"
                   />
                 </div>
-                <p className="text-white text-xl md:w-[80%] pb-8 ">
+                <p className="text-white md:text-xl text-sm md:w-[80%] md:pb-8 pb-0 ">
                   We do not just consult for clients but we also build
                   innovative products that solve big problems of individuals in
                   Nigeria, Africa and globally.

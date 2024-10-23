@@ -6,21 +6,22 @@ import React from "react";
 
 const ProductDev = () => {
   return (
-    <section className="w-full min-h-screen relative md:mt-6 mt-10">
+    <section className="w-full min-h-screen relative md:mt-6 -mt-8">
       <div className="w-full h-[100vh] mt-8">
-        <Image
-          src={"/productdevelopment.png"}
-          alt="bannerimg"
-          width={1020}
-          height={750}
-          className="w-screen relative h-full object-cover"
-        />
-        <div className="absolute md:w-[70%] w-full md:top-[10%] top-10 md:px-24 px-2">
+          <Image
+            src={"/productdevelopment.png"}
+            alt="bannerimg"
+            width={1020}
+            height={750}
+            className="relative w-screen h-full object-cover"
+          />
+        
+        <div className="absolute md:w-[70%] w-full md:top-[10%] top-32 md:px-24 px-4">
           <div className="flex flex-col space-y-8 mb-6">
-            <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
+            <h1 className="md:text-5xl text-5xl text-white font-bold text-left font-grotesque">
               Transforming Ideas into
             </h1>
-            <h1 className="md:text-5xl text-4xl text-white font-bold text-left font-grotesque">
+            <h1 className="md:text-5xl text-5xl text-white font-bold text-left font-grotesque">
               Powerful Digital Solutions
             </h1>
             <p className="text-whitetext text-md text-left">
@@ -28,16 +29,16 @@ const ProductDev = () => {
             </p>
             <Button
               name="Book a session"
-              buttonClass="p-3 w-40 bg-brandcolor text-white"
+              buttonClass="md:p-3 p-4 w-full md:w-40 bg-brandcolor text-white"
             />
           </div>
         </div>
       </div>
-      <div className="w-full  md:h-[90vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-0 md:mt-0 md:pt-0">
+      <div className="w-full  md:h-[90vh] h-auto bg-[#F9FBFF] flex items-center justify-center mt-20 md:mt-0 md:pt-0 px-4">
         <div className="w-full max-w-3xl mx-auto -mt-10">
           <Heading
             noborder
-            addwidth="w-[600px]"
+            addwidth="md:w-[600px] w-[300px]"
             name="Our Development Process"
             desc="Our process blends creativity, technology, and precision."
           />
@@ -62,7 +63,7 @@ const ProductDev = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl px-2 md:px-2 mx-auto md:h-[100vh] h-auto md:mt-14 mt-10">
+      <div className="w-full max-w-5xl px-4 md:px-2 mx-auto md:h-[100vh] h-auto md:mt-14 mt-10">
         <div className="w-full h-full grid md:grid-cols-2 gap-8">
           <div className="w-full h-full relative ">
             <Image

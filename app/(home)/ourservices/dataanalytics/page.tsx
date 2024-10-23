@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="w-full min-h-screen md:mt-8 mt-10">
+    <section className="w-full min-h-screen md:mt-8 mt-0">
       <div className="w-full h-[100vh] relative md:mt-0 top-0 mb-0">
         <Image
           src={"/bg1black.svg"}
@@ -53,7 +53,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[100vh] h-[110vh] relative mt-6 mb-0">
+      <div className="w-full md:h-[100vh] h-[110vh] relative md:mt-6 -mt-14 mb-0">
         <div className="  w-full md:px-12 px-2 h-full grid md:grid-cols-2 grid-cols-1">
           <div className="w-full h-full flex items-center justify-center">
             <div className="flex flex-col space-y-4 md:w-[80%] w-full">
