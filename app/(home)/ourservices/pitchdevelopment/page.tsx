@@ -9,8 +9,8 @@ const Pitch = () => {
   }
   return (
     <section className="w-full min-h-screen md:mt-14 -mt-2">
-      <div className="w-full md:px-24">
-        <div className="w-full h-[80vh] bg-black md:bg-transparent relative rounded">
+      <div className="w-full lg:px-24 px-4">
+        <div className="w-full h-[80vh] bg-black lg:bg-transparent relative rounded">
           <Image
             src={"/pitchgradbg.svg"}
             alt="pitch"
@@ -57,9 +57,9 @@ const Pitch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[80vh] relative mt-4 mb-0">
-        <div className="md:px-24 px-4 w-full md:h-[100vh] h-auto">
-          <div className="w-full h-full grid md:grid-cols-2 grid-cols-1">
+      <div className="w-full lg:h-[80vh] md:h-[80vh] relative mt-4 mb-0">
+        <div className="lg:px-24 md:px-4 px-4 w-full md:h-[100vh] h-auto">
+          <div className="w-full h-full grid lg:grid-cols-2 grid-cols-1">
             <div className="w-full h-full flex items-start md:mt-10 mt-10 justify-center">
               <div className="flex flex-col space-y-4 md:w-[80%] w-full">
                 <div className="flex flex-col space-y-6 mb-6">
@@ -80,13 +80,13 @@ const Pitch = () => {
                 alt="bannerimg"
                 width={400}
                 height={450}
-                className="object-contain z-50 absolute top-0 md:left-16"
+                className="object-contain z-50 absolute top-0 md:left-16 md:-top-72 lg:top-0"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[90vh] h-auto bg-[#F9FBFF] md:px-24 px-2  flex flex-col items-center justify-center md:mt-10 mt-32">
+      <div className="w-full lg:h-[90vh] md:h-[60vh] h-auto bg-[#F9FBFF] lg:px-24 md:px-4 px-4  flex flex-col items-center justify-center md:mt-10 mt-32">
         <div className="md:w-fit w-full ">
           <h2 className="text-black md:text-2xl text-lg  font-bold font-grotesque text-center">
             What we offer under pitch development
@@ -120,7 +120,7 @@ const Pitch = () => {
         </div>
       </div>
       <div className="w-full md:mt-14 mt-20">
-        <div className="w-full md:h-[100vh] h-auto md:px-24 px-2">
+        <div className="w-full lg:h-[100vh] md:h-[70vh] h-auto md:px-24 px-2">
           <div className="w-full h-full grid md:grid-cols-2 grid-cols-1 gap-8">
             <div className="w-full h-full relative ">
               <Image
@@ -131,7 +131,7 @@ const Pitch = () => {
                 className="object-contain"
               />
             </div>
-            <div className="w-full h-full flex items-start md:mt-24 mt-10 justify-center">
+            <div className="w-full h-full flex items-start lg:mt-24 md:mt-2 mt-10 justify-center">
               <div className="flex flex-col space-y-4 w-[100%]">
                 <div className="flex flex-col space-y-6 mb-6">
                   <h1 className="text-2xl text-black font-bold text-left font-grotesque md:w-[60%] w-full">
