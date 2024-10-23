@@ -7,12 +7,28 @@ import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 
 import NavModal from "./NavModal";
+
+// Define the structure of each sublink (inside subLinks)
+interface subLinkProps {
+  title: string;
+  Icon: string;  // If the icon is a React component, you can refine this further to React.FC or JSX.Element
+  link: string;
+}
+
+// Define the structure for navItems
+interface navItemProps {
+  id: number;
+  title: string;
+  link: string;
+  subLinks?: subLinkProps[];  // subLinks is optional since not all navItems have subLinks
+}
+
 const NavLinks = () => {
   const [openDropdownId, setOpenDropdownId] = useState<number | null>(null); // State to manage dropdown visibility
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // State to manage modal visibility
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
   const toggleDropdown = (id: number | null) => {
     setOpenDropdownId((prevId) => (prevId === id ? null : id));
     setIsModalOpen((prev) => (prev ? !prev : true));
@@ -44,7 +60,7 @@ const NavLinks = () => {
   };
   return (
     <div className="lg:flex items-center w-full">
-      {navItems.map((item) => (
+      {navItems.map((item: navItemProps) => (
         <div
           onClick={() => handleNavClick(item.id, item.link)}
           key={item.id}
@@ -78,11 +94,13 @@ const NavLinks = () => {
           </div>
           {/* Modal only opens for items with sublinks */}
           {openDropdownId === item.id && isModalOpen && (
+          
             <NavModal
               isOpen={isModalOpen}
-              item={item?.subLinks}
+              item={item.subLinks ?? []} // Pass subLinks directly
               onClose={closeModal}
             />
+        
           )}
         </div>
       ))}

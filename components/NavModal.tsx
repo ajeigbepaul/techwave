@@ -3,15 +3,17 @@ import { cn } from "@/lib/utils";
 interface AddCategoryModalProps {
   isOpen: boolean;
   onClose: () => void;
-  item: any;
+  item: subLinkProps[];
 }
-interface subProps {
-  image: string;
+// Define the structure of each sublink (inside subLinks)
+interface subLinkProps {
   title: string;
-  Icon: string;
-  id: number;
+  Icon: string;  // If the icon is a React component, you can refine this further to React.FC or JSX.Element
   link: string;
 }
+
+// Define the structure for navItems
+
 
 const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
   const handleModalClick = (e: React.MouseEvent) => {
@@ -26,9 +28,13 @@ const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
         className="flex flex-col bg-white rounded-[4px] w-full lg:max-w-xs md:max-w-md md:-mt-32 -mt-52 md:-ml-40"
         onClick={handleModalClick}
       >
-        <div className={cn(" p-2 px-4 z-50 transition-all duration-300 ease-in-out")}>
+        <div
+          className={cn(
+            " p-2 px-4 z-50 transition-all duration-300 ease-in-out"
+          )}
+        >
           {" "}
-          {item?.map((item: subProps, idx: number) => (
+          {item?.map((item: subLinkProps, idx: number) => (
             <div key={idx}>
               <a
                 href={item.link}
@@ -42,7 +48,9 @@ const NavModal = ({ onClose, item }: AddCategoryModalProps) => {
                     alt="sub-linkicons"
                   />
                 </div>
-                <span className="text-xs text-[#181818] font-medium">{item?.title}</span>
+                <span className="text-xs text-[#181818] font-medium">
+                  {item?.title}
+                </span>
               </a>
             </div>
           ))}
